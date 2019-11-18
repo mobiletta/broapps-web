@@ -1,0 +1,92 @@
+{
+  "projects": {
+    "prod": "broapps-prod",
+    "staging": "broapps-dev",
+    "dev": "broapps-dev",
+    "test": "broapps-dev",
+    "demo": "broapps-dev",
+    "master": "broapps-dev",
+    "default": "broapps-dev"
+  },
+  "ci": {
+    "createConfig": {
+      "prod": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "< your api key >",
+          "authDomain": "devshare-int.firebaseapp.com",
+          "databaseURL": "https://devshare-int.firebaseio.com",
+          "projectId": "devshare-int",
+          "storageBucket": "devshare-int.appspot.com"
+        }
+      },
+      "staging": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "< your api key >",
+          "authDomain": "devshare-int.firebaseapp.com",
+          "databaseURL": "https://devshare-int.firebaseio.com",
+          "projectId": "devshare-int",
+          "storageBucket": "devshare-int.appspot.com"
+        }
+      },
+      "dev": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "< your api key >",
+          "authDomain": "devshare-int.firebaseapp.com",
+          "databaseURL": "https://devshare-int.firebaseio.com",
+          "projectId": "devshare-int",
+          "storageBucket": "devshare-int.appspot.com"
+        }
+      },
+      "test": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "< your api key >",
+          "authDomain": "devshare-int.firebaseapp.com",
+          "databaseURL": "https://devshare-int.firebaseio.com",
+          "projectId": "devshare-int",
+          "storageBucket": "devshare-int.appspot.com"
+        }
+      },
+      "demo": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "< your api key >",
+          "authDomain": "devshare-int.firebaseapp.com",
+          "databaseURL": "https://devshare-int.firebaseio.com",
+          "projectId": "devshare-int",
+          "storageBucket": "devshare-int.appspot.com"
+        }
+      },
+       "master": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "< your api key >",
+          "authDomain": "devshare-int.firebaseapp.com",
+          "databaseURL": "https://devshare-int.firebaseio.com",
+          "projectId": "devshare-int",
+          "storageBucket": "devshare-int.appspot.com"
+        }
+      },
+      "default": {
+        "version": "${npm_package_version}",
+        "env": "development",
+        "firebase": {
+          "apiKey": "< your api key >",
+          "authDomain": "devshare-int.firebaseapp.com",
+          "databaseURL": "https://devshare-int.firebaseio.com",
+          "projectId": "devshare-int",
+          "storageBucket": "devshare-int.appspot.com"
+        }
+      }
+    }
+  }
+}
