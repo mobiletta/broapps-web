@@ -32,7 +32,7 @@
   "scripts": {
     "start": "cross-env react-scripts start",
     "build": "cross-env react-scripts build",
-    "test": "cross-env react-scripts test --env=jsdom",
+    "test": "cross-env react-scripts test --passWithNoTests --env=jsdom",
     "eject": "cross-env react-scripts eject",
     "build:config": "firebase-ci createConfig",
     "deploy": "firebase-ci deploy",
