@@ -63,6 +63,10 @@ node_modules/
 
 # dotenv environment variables file
 .env
+.env.local
+.env.development
+.env.staging
+.env.production
 
 .DS_STORE
 build
