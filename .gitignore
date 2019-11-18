@@ -1,4 +1,4 @@
-# Logs
+t commit -m "remove file1.txt"# Logs
 logs
 *.log
 npm-debug.log*
@@ -66,3 +66,4 @@ node_modules/
 
 .DS_STORE
 build
+*.orig
