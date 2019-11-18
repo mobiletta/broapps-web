@@ -2,6 +2,14 @@ import React, { Component } from 'react'
 import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signUp } from '../../store/actions/authActions'
+import VideoBg from 'reactjs-videobg';
+import webm from '../../media/Vegas.webm';
+import mp4 from '../../media/Vegas.mp4';
+import poster from '../../media/Vegas_First_Frame.png';
+
+import "./Login.css";
+import "./InputBox.css";
+
 
 class SignUp extends Component {
   state = {
@@ -24,32 +32,38 @@ class SignUp extends Component {
     if (auth.uid) return <Redirect to='/' /> 
     return (
       <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Sign Up</h5>
-          <div className="input-field">
+        <VideoBg poster={poster}>
+          <VideoBg.Source src={webm} type="video/webm" />
+          <VideoBg.Source src={mp4} type="video/mp4" />
+        </VideoBg>
+        <div className="box">
+        <h2>Sign Up</h2>
+        <form onSubmit={this.handleSubmit}>
+          <div className="inputBox">
             <label htmlFor="email">Email</label>
             <input type="email" id='email' onChange={this.handleChange} />
           </div>
-          <div className="input-field">
+          <div className="inputBox">
             <label htmlFor="password">Password</label>
             <input type="password" id='password' onChange={this.handleChange} />
           </div>
-          <div className="input-field">
+          <div className="inputBox">
             <label htmlFor="firstName">First Name</label>
             <input type="text" id='firstName' onChange={this.handleChange} />
           </div>
-          <div className="input-field">
+          <div className="inputBox">
             <label htmlFor="lastName">Last Name</label>
             <input type="text" id='lastName' onChange={this.handleChange} />
           </div>
-          <div className="input-field">
+          <div className="inputBox">
             <button className="btn pink lighten-1 z-depth-0">Sign Up</button>
             <div className="center red-text">
               { authError ? <p>{authError}</p> : null }
             </div>
           </div>
-        </form>
-      </div>
+          </form>
+        </div>
+        </div>
     )
   }
 }

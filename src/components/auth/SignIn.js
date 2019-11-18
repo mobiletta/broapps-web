@@ -2,6 +2,16 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { signIn } from '../../store/actions/authActions'
 import { Redirect } from 'react-router-dom'
+//import { startLogin } from '../actions/auth';
+import VideoBg from 'reactjs-videobg';
+import webm from '../../media/Vegas.webm';
+import mp4 from '../../media/Vegas.mp4';
+import poster from '../../media/Vegas_First_Frame.png';
+//import { GoogleLoginButton, GithubLoginButton, FacebookLoginButton, TwitterLoginButton, AmazonLoginButton, InstagramLoginButton, LinkedInLoginButton, MicrosoftLoginButton } from "react-social-login-buttons";
+
+import "./Login.css";
+import "./InputBox.css";
+
 
 class SignIn extends Component {
   state = {
@@ -22,23 +32,31 @@ class SignIn extends Component {
     if (auth.uid) return <Redirect to='/' /> 
     return (
       <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Sign In</h5>
-          <div className="input-field">
+        <VideoBg poster={poster}>
+          <VideoBg.Source src={webm} type="video/webm" />
+          <VideoBg.Source src={mp4} type="video/mp4" />
+        </VideoBg>
+        <div className="box">
+        <h2>Sign In</h2>
+        <div className="form">
+        <form onSubmit={this.handleSubmit}>
+          <div className="inputBox">
             <label htmlFor="email">Email</label>
             <input type="email" id='email' onChange={this.handleChange} />
           </div>
-          <div className="input-field">
+          <div className="inputBox">
             <label htmlFor="password">Password</label>
             <input type="password" id='password' onChange={this.handleChange} />
           </div>
-          <div className="input-field">
+          <div className="inputBox">
             <button className="btn pink lighten-1 z-depth-0">Login</button>
             <div className="center red-text">
               { authError ? <p>{authError}</p> : null }
             </div>
           </div>
         </form>
+        </div>
+        </div>
       </div>
     )
   }
