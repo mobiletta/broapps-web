@@ -1,9 +1,11 @@
 {
   "projects": {
     "default": "broapps-dev",
+    "master": "broapps-prod",
     "prod": "broapps-prod",
-    "stage": "broapps-dev",
-    "test": "broapps-dev",
+    "uat": "broapps-uat",
+    "staging": "broapps-uat",
+    "default": "broapps-dev",
     "dev": "broapps-dev"
   },
   "ci": {
@@ -13,52 +15,86 @@
         "version": "${npm_package_version}",
         "env": "production",
         "firebase" : {
-          "apiKey": "AIzaSyC73kJiLB8OfRi5nZFIsyy0K_97oyS_W-s",
-          "authDomain": "broleans-prod.firebaseapp.com",
-          "databaseURL": "https://broleans-prod.firebaseio.com",
-          "projectId": "broleans-prod",
-          "storageBucket": "broleans-prod.appspot.com",
-          "messagingSenderId": "650106616300",
-          "appId": "1:650106616300:web:a3761936aca8e3a0d4e8c9",
-          "measurementId": "G-2J3YV9NNVG"
+          apiKey: "AIzaSyBCQPjVM0rtS3558vTSN_w7FHsAR2ER4Bs",
+          authDomain: "broapps-prod.firebaseapp.com",
+          databaseURL: "https://broapps-prod.firebaseio.com",
+          projectId: "broapps-prod",
+          storageBucket: "broapps-prod.appspot.com",
+          messagingSenderId: "285031108431",
+          appId: "1:285031108431:web:1ec47f993b4a1d1f51ff3a",
+          measurementId: "G-BM6449LPPP"
         },
-        "sentryDsn": "https://48a6f02c4cb94ef188086dd42e734c5a@sentry.io/1782112",
+        "sentryDsn": "https://14b8744f9d5548739a4f02be1a096fbc@sentry.io/1824492",
         "analyticsTrackingId": "211483119",
-        "publicVapidKey": "BKc6I5RQBymllElnyt7lU1zKhJ4RQibDE_MOCTmcTG5Mb6PSwb82X0GY8JK3a6FYveySHZT3B--_CMDcwkSzMhU"
+        "publicVapidKey": "BLDQNBMFAfJF0OSf_AchOrV1r079bgLfU2OxJ2U_O9pYg2cGL8V4EATnIXo1sBfNJxv4cvUAC8gsFrCZFKuz178"
       },
-      "test": {
+      "prod": {
+      "version": "${npm_package_version}",
+      "env": "production",
+      "firebase" : {
+        apiKey: "AIzaSyBCQPjVM0rtS3558vTSN_w7FHsAR2ER4Bs",
+        authDomain: "broapps-prod.firebaseapp.com",
+        databaseURL: "https://broapps-prod.firebaseio.com",
+        projectId: "broapps-prod",
+        storageBucket: "broapps-prod.appspot.com",
+        messagingSenderId: "285031108431",
+        appId: "1:285031108431:web:1ec47f993b4a1d1f51ff3a",
+        measurementId: "G-BM6449LPPP"
+      },
+      "sentryDsn": "https://14b8744f9d5548739a4f02be1a096fbc@sentry.io/1824492",
+      "analyticsTrackingId": "211483119",
+      "publicVapidKey": "BLDQNBMFAfJF0OSf_AchOrV1r079bgLfU2OxJ2U_O9pYg2cGL8V4EATnIXo1sBfNJxv4cvUAC8gsFrCZFKuz178"
+      },
+      "uat": {
         "version": "${npm_package_version}",
         "env": "test",
           "firebase" : {
-            "apiKey": "AIzaSyC73kJiLB8OfRi5nZFIsyy0K_97oyS_W-s",
-            "authDomain": "broleans-prod.firebaseapp.com",
-            "databaseURL": "https://broleans-prod.firebaseio.com",
-            "projectId": "broleans-prod",
-            "storageBucket": "broleans-prod.appspot.com",
-            "messagingSenderId": "650106616300",
-            "appId": "1:650106616300:web:a3761936aca8e3a0d4e8c9",
-            "measurementId": "G-2J3YV9NNVG"
+            apiKey: "AIzaSyASm4OXdVDXJOgc-XfKEKxMAbG9XHTOomA",
+            authDomain: "broapps-uat.firebaseapp.com",
+            databaseURL: "https://broapps-uat.firebaseio.com",
+            projectId: "broapps-uat",
+            storageBucket: "broapps-uat.appspot.com",
+            messagingSenderId: "879266581397",
+            appId: "1:879266581397:web:2549f90d499a92e28a849c",
+            measurementId: "G-72XXB3QD4P"
           },
-          "sentryDsn": "https://48a6f02c4cb94ef188086dd42e734c5a@sentry.io/1782112",
+          "sentryDsn": "https://14b8744f9d5548739a4f02be1a096fbc@sentry.io/1824492",
           "analyticsTrackingId": "211483119",
-          "publicVapidKey": "BKc6I5RQBymllElnyt7lU1zKhJ4RQibDE_MOCTmcTG5Mb6PSwb82X0GY8JK3a6FYveySHZT3B--_CMDcwkSzMhU"
+          "publicVapidKey": "BMmwGWoBjMi7u26ujtFGYyoJHetZ96lxU53II0Zu1nQPyU5sZFAiL6hIzZJfjCNwZb9grpqXPvHif-qIfrc7950"
+      },
+      "staging": {
+      "version": "${npm_package_version}",
+      "env": "test",
+        "firebase" : {
+          apiKey: "AIzaSyASm4OXdVDXJOgc-XfKEKxMAbG9XHTOomA",
+          authDomain: "broapps-uat.firebaseapp.com",
+          databaseURL: "https://broapps-uat.firebaseio.com",
+          projectId: "broapps-uat",
+          storageBucket: "broapps-uat.appspot.com",
+          messagingSenderId: "879266581397",
+          appId: "1:879266581397:web:2549f90d499a92e28a849c",
+          measurementId: "G-72XXB3QD4P"
+        },
+        "sentryDsn": "https://14b8744f9d5548739a4f02be1a096fbc@sentry.io/1824492",
+        "analyticsTrackingId": "211483119",
+        "publicVapidKey": "BMmwGWoBjMi7u26ujtFGYyoJHetZ96lxU53II0Zu1nQPyU5sZFAiL6hIzZJfjCNwZb9grpqXPvHif-qIfrc7950"
       },
       "dev": {
         "version": "${npm_package_version}",
         "env": "development",
         "firebase" : {
-          "apiKey": "AIzaSyC73kJiLB8OfRi5nZFIsyy0K_97oyS_W-s",
-          "authDomain": "broleans-prod.firebaseapp.com",
-          "databaseURL": "https://broleans-prod.firebaseio.com",
-          "projectId": "broleans-prod",
-          "storageBucket": "broleans-prod.appspot.com",
-          "messagingSenderId": "650106616300",
-          "appId": "1:650106616300:web:a3761936aca8e3a0d4e8c9",
-          "measurementId": "G-2J3YV9NNVG"
+          apiKey: "AIzaSyDccKZOX9qcZ2QnUnHJQwtav_NP3G7h0l0",
+          authDomain: "broapps-dev.firebaseapp.com",
+          databaseURL: "https://broapps-dev.firebaseio.com",
+          projectId: "broapps-dev",
+          storageBucket: "broapps-dev.appspot.com",
+          messagingSenderId: "97352233696",
+          appId: "1:97352233696:web:c819e83feb7238263fd685",
+          measurementId: "G-YHTMFSE4Q9"
         },
-        "sentryDsn": "https://48a6f02c4cb94ef188086dd42e734c5a@sentry.io/1782112",
+        "sentryDsn": "https://14b8744f9d5548739a4f02be1a096fbc@sentry.io/1824492",
         "analyticsTrackingId": "211483119",
-        "publicVapidKey": "BKc6I5RQBymllElnyt7lU1zKhJ4RQibDE_MOCTmcTG5Mb6PSwb82X0GY8JK3a6FYveySHZT3B--_CMDcwkSzMhU"
+        "publicVapidKey": "BMdW_ieu-SwjNKoNVQncYe1p6hP-PlK2q5lrnrokmyUWMx3-5yszFDsB03U2djP5bL0NYHRR3kCXKdMV-2qcOtI"
       }
   }
 }
