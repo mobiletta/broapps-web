@@ -38,7 +38,12 @@
     "deploy": "firebase-ci deploy",
     "flow": "flow",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "bundle-analyze": "node scripts/webpack-analyze.js"
+    "bundle-analyze": "node scripts/webpack-analyze.js",
+    "functions:start": "npm run start --prefix functions",
+    "functions:serve": "npm run serve --prefix functions",
+    "functions:watch": "npm run watch --prefix functions",
+    "functions:build": "npm run build --prefix functions",
+    "functions:test": "npm run test --prefix functions"
   },
   "browserslist": {
     "production": [

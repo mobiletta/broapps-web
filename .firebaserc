@@ -2,7 +2,7 @@
   "projects": {
     "default": "broapps-dev",
     "master": "broapps-prod",
-    "prod": "broapps-prod",
+    "production": "broapps-prod",
     "uat": "broapps-uat",
     "staging": "broapps-uat",
     "default": "broapps-dev",
