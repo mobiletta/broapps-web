@@ -1,0 +1,89 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2.1
+orbs:
+  slack: circleci/slack@3.4.0
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:10
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+
+      - run: yarn install
+      - run: npm install --prefix ./functions
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: 'Build Environment'
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "prod" ]; then
+              npm run build
+            fi
+            if [ "${CIRCLE_BRANCH}" == "staging" ]; then
+              npm run build:staging
+            fi
+            if [ "${CIRCLE_BRANCH}" == "dev" ]; then
+              npm run build:dev
+            fi
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              npm run build
+            fi
+            if [ "${CIRCLE_BRANCH}" == "default" ]; then
+              npm run build:dev
+            fi
+
+      # run tests!
+      - run: yarn test
+      - run:
+          name: 'Switch Firebase Environment'
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "prod" ]; then
+              ./node_modules/.bin/firebase use production
+            fi
+            if [ "${CIRCLE_BRANCH}" == "staging" ]; then
+              ./node_modules/.bin/firebase use staging
+            fi
+            if [ "${CIRCLE_BRANCH}" == "dev" ]; then
+              ./node_modules/.bin/firebase use dev
+            fi
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ./node_modules/.bin/firebase use production
+            fi
+            if [ "${CIRCLE_BRANCH}" == "default" ]; then
+              ./node_modules/.bin/firebase use dev
+            fi
+      - slack/notify:
+          color: '#42e2f4'
+          message: 'Project to deploy to $(firebase-ci project)'
+          webhook: '${SLACK_WEBHOOK}'
+      - run: npm run build:config
+      - run: npm run deploy
+      - slack/status:
+          fail_only: false
+          success_message: ':tada: A $CIRCLE_JOB job has succeeded!'
+          failure_message: ':red_circle: A $CIRCLE_JOB job has failed!'
+          only_for_branches: master,test,dev
+          webhook: '${SLACK_WEBHOOK}'

@@ -6,6 +6,7 @@
     "cross-env": "^6.0.3",
     "firebase": "^7.4.0",
     "firebaseui": "^4.3.0",
+    "flow-bin": "^0.112.0",
     "formik": "^2.0.4",
     "grommet": "^2.8.0",
     "grommet-icons": "^4.4.0",
@@ -22,7 +23,9 @@
     "redux-firestore": "^0.10.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
+    "source-map-explorer": "^2.1.1",
     "styled-components": "^4.4.1",
+    "typescript": "^3.7.2",
     "yup": "^0.27.0"
   },
   "scripts": {
@@ -31,7 +34,10 @@
     "test": "cross-env react-scripts test --env=jsdom",
     "eject": "cross-env react-scripts eject",
     "build:config": "firebase-ci createConfig",
-    "deploy": "firebase-ci deploy"
+    "deploy": "firebase-ci deploy",
+    "flow": "flow",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "bundle-analyze": "node scripts/webpack-analyze.js"
   },
   "browserslist": {
     "production": [
@@ -46,7 +52,11 @@
     ]
   },
   "devDependencies": {
+    "create-react-component-folder": "^0.1.30",
+    "eslint-plugin-import": "^2.18.2",
     "firebase-ci": "^0.7.0",
-    "firebase-tools": "^7.7.0"
+    "firebase-tools": "^7.7.0",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "webpack-bundle-analyzer": "^3.6.0"
   }
 }

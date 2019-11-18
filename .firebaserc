@@ -1,92 +1,64 @@
 {
   "projects": {
+    "default": "broapps-dev",
     "prod": "broapps-prod",
-    "staging": "broapps-dev",
-    "dev": "broapps-dev",
+    "stage": "broapps-dev",
     "test": "broapps-dev",
-    "demo": "broapps-dev",
-    "master": "broapps-dev",
-    "default": "broapps-dev"
+    "dev": "broapps-dev"
   },
   "ci": {
+    "copyVersion": true,
     "createConfig": {
-      "prod": {
+      "master": {
         "version": "${npm_package_version}",
-        "env": "development",
-        "firebase": {
-          "apiKey": "< your api key >",
-          "authDomain": "devshare-int.firebaseapp.com",
-          "databaseURL": "https://devshare-int.firebaseio.com",
-          "projectId": "devshare-int",
-          "storageBucket": "devshare-int.appspot.com"
-        }
+        "env": "production",
+        "firebase" : {
+          "apiKey": "AIzaSyC73kJiLB8OfRi5nZFIsyy0K_97oyS_W-s",
+          "authDomain": "broleans-prod.firebaseapp.com",
+          "databaseURL": "https://broleans-prod.firebaseio.com",
+          "projectId": "broleans-prod",
+          "storageBucket": "broleans-prod.appspot.com",
+          "messagingSenderId": "650106616300",
+          "appId": "1:650106616300:web:a3761936aca8e3a0d4e8c9",
+          "measurementId": "G-2J3YV9NNVG"
+        },
+        "sentryDsn": "https://48a6f02c4cb94ef188086dd42e734c5a@sentry.io/1782112",
+        "analyticsTrackingId": "211483119",
+        "publicVapidKey": "BKc6I5RQBymllElnyt7lU1zKhJ4RQibDE_MOCTmcTG5Mb6PSwb82X0GY8JK3a6FYveySHZT3B--_CMDcwkSzMhU"
       },
-      "staging": {
+      "test": {
         "version": "${npm_package_version}",
-        "env": "development",
-        "firebase": {
-          "apiKey": "< your api key >",
-          "authDomain": "devshare-int.firebaseapp.com",
-          "databaseURL": "https://devshare-int.firebaseio.com",
-          "projectId": "devshare-int",
-          "storageBucket": "devshare-int.appspot.com"
-        }
+        "env": "test",
+          "firebase" : {
+            "apiKey": "AIzaSyC73kJiLB8OfRi5nZFIsyy0K_97oyS_W-s",
+            "authDomain": "broleans-prod.firebaseapp.com",
+            "databaseURL": "https://broleans-prod.firebaseio.com",
+            "projectId": "broleans-prod",
+            "storageBucket": "broleans-prod.appspot.com",
+            "messagingSenderId": "650106616300",
+            "appId": "1:650106616300:web:a3761936aca8e3a0d4e8c9",
+            "measurementId": "G-2J3YV9NNVG"
+          },
+          "sentryDsn": "https://48a6f02c4cb94ef188086dd42e734c5a@sentry.io/1782112",
+          "analyticsTrackingId": "211483119",
+          "publicVapidKey": "BKc6I5RQBymllElnyt7lU1zKhJ4RQibDE_MOCTmcTG5Mb6PSwb82X0GY8JK3a6FYveySHZT3B--_CMDcwkSzMhU"
       },
       "dev": {
         "version": "${npm_package_version}",
         "env": "development",
-        "firebase": {
-          "apiKey": "< your api key >",
-          "authDomain": "devshare-int.firebaseapp.com",
-          "databaseURL": "https://devshare-int.firebaseio.com",
-          "projectId": "devshare-int",
-          "storageBucket": "devshare-int.appspot.com"
-        }
-      },
-      "test": {
-        "version": "${npm_package_version}",
-        "env": "development",
-        "firebase": {
-          "apiKey": "< your api key >",
-          "authDomain": "devshare-int.firebaseapp.com",
-          "databaseURL": "https://devshare-int.firebaseio.com",
-          "projectId": "devshare-int",
-          "storageBucket": "devshare-int.appspot.com"
-        }
-      },
-      "demo": {
-        "version": "${npm_package_version}",
-        "env": "development",
-        "firebase": {
-          "apiKey": "< your api key >",
-          "authDomain": "devshare-int.firebaseapp.com",
-          "databaseURL": "https://devshare-int.firebaseio.com",
-          "projectId": "devshare-int",
-          "storageBucket": "devshare-int.appspot.com"
-        }
-      },
-       "master": {
-        "version": "${npm_package_version}",
-        "env": "development",
-        "firebase": {
-          "apiKey": "< your api key >",
-          "authDomain": "devshare-int.firebaseapp.com",
-          "databaseURL": "https://devshare-int.firebaseio.com",
-          "projectId": "devshare-int",
-          "storageBucket": "devshare-int.appspot.com"
-        }
-      },
-      "default": {
-        "version": "${npm_package_version}",
-        "env": "development",
-        "firebase": {
-          "apiKey": "< your api key >",
-          "authDomain": "devshare-int.firebaseapp.com",
-          "databaseURL": "https://devshare-int.firebaseio.com",
-          "projectId": "devshare-int",
-          "storageBucket": "devshare-int.appspot.com"
-        }
+        "firebase" : {
+          "apiKey": "AIzaSyC73kJiLB8OfRi5nZFIsyy0K_97oyS_W-s",
+          "authDomain": "broleans-prod.firebaseapp.com",
+          "databaseURL": "https://broleans-prod.firebaseio.com",
+          "projectId": "broleans-prod",
+          "storageBucket": "broleans-prod.appspot.com",
+          "messagingSenderId": "650106616300",
+          "appId": "1:650106616300:web:a3761936aca8e3a0d4e8c9",
+          "measurementId": "G-2J3YV9NNVG"
+        },
+        "sentryDsn": "https://48a6f02c4cb94ef188086dd42e734c5a@sentry.io/1782112",
+        "analyticsTrackingId": "211483119",
+        "publicVapidKey": "BKc6I5RQBymllElnyt7lU1zKhJ4RQibDE_MOCTmcTG5Mb6PSwb82X0GY8JK3a6FYveySHZT3B--_CMDcwkSzMhU"
       }
-    }
   }
 }
