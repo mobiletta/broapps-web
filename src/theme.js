@@ -1,5 +1,6 @@
 import { grommet } from "grommet";
 import { deepMerge } from "grommet/utils";
+import { rgba } from "polished";
 
 export const theme = deepMerge(grommet, {
   global: {
@@ -17,6 +18,7 @@ export const theme = deepMerge(grommet, {
     size: {
       avatar: "36px",
       sidebar: "60px"
-    }
+    },
+    background: rgba(255,255,255,0)
   }
 });

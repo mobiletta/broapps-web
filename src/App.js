@@ -17,9 +17,16 @@ import {
   Servers as ServersIcon
 } from "grommet-icons";
 
-import { theme } from "./theme";
 import Sidebar from "./components/nav/Sidebar";
 import { NotFound, Servers, Settings, Users } from "./pages";
+
+const mediaBackgroundTheme = {
+  grommet: {
+    extend: `
+      background: rgba(255,255,255,0);
+    `
+  }
+};
 
 const userSession = {
   user: {
@@ -58,7 +65,7 @@ class App extends Component {
     return (
       <BrowserRouter>
       <div className="App">
-        <Grommet theme={theme} full>
+        <Grommet theme={mediaBackgroundTheme} full>
             <Navbar />
             <Box direction="row" fill>
               <Sidebar
