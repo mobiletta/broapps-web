@@ -7,7 +7,10 @@ const SignedInLinks = (props) => {
   return (
     <div>
       <ul className="right">
-        <li><NavLink to='/create'>Players</NavLink></li>
+        <li><NavLink to='/create'>Odds</NavLink></li>
+        <li><NavLink to='/create'>My Bets</NavLink></li>
+        <li><NavLink to='/create'>My Rooms</NavLink></li>
+        <li><NavLink to='/create'>Players Online</NavLink></li>
         <li><a href="!#" onClick={props.signOut}>Log Out</a></li>
         <li><NavLink to='/' className="btn btn-floating pink lighten-1">
           {props.profile.initials}

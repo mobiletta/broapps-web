@@ -3,6 +3,9 @@ import { connect } from 'react-redux'
 import { createProject } from '../../store/actions/projectActions'
 import { Redirect } from 'react-router-dom'
 
+import "../auth/Login.css";
+import "../auth/InputBox.css";
+
 class CreateProject extends Component {
   state = {
     title: '',
@@ -24,8 +27,10 @@ class CreateProject extends Component {
     if (!auth.uid) return <Redirect to='/signin' /> 
     return (
       <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
-          <h5 className="grey-text text-darken-3">Place a Bet</h5>
+        <div className="box">
+        <h2>Place a Bet</h2>
+        <div className="form">
+        <form onSubmit={this.handleSubmit}>
           <div className="input-field">
             <input type="text" id='title' onChange={this.handleChange} />
             <label htmlFor="title">Team</label>
@@ -42,6 +47,8 @@ class CreateProject extends Component {
             <button className="btn pink lighten-1">Create</button>
           </div>
         </form>
+        </div>
+        </div>
       </div>
     )
   }
