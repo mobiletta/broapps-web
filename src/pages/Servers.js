@@ -4,6 +4,6 @@ import { Box, Heading } from "grommet";
 
 export const Servers = () => (
   <Box fill align="center" justify="center">
-    <Heading>Servers</Heading>
+    <Heading>NFL</Heading>
   </Box>
 );

@@ -23,8 +23,8 @@ import { NotFound, Servers, Settings, Users } from "./pages";
 
 const userSession = {
   user: {
-    name: "Alan Souza",
-    thumbnail: "//s.gravatar.com/avatar/b226da5c619b18b44eb95c30be393953?s=80"
+    name: "Brian Weber",
+    thumbnail: "//s.gravatar.com/avatar/2422eeb4b33f088b4c3927c7d9f59528?s=80"
   },
   items: [
     {
@@ -36,17 +36,17 @@ const userSession = {
 
 const items = [
   {
-    label: "Servers",
+    label: "NFL",
     Icon: ServersIcon,
     path: "/servers"
   },
   {
-    label: "Users",
+    label: "MLB",
     Icon: Group,
     path: "/users"
   },
   {
-    label: "Settings",
+    label: "NCAA",
     Icon: SettingsOption,
     path: "/settings"
   }
@@ -63,7 +63,7 @@ class App extends Component {
             <Box direction="row" fill>
               <Sidebar
                 appIcon={<GrommetIcon color="brand" />}
-                appName="My App"
+                appName="Bro Leans"
                 items={items}
                 userSession={userSession}
               />

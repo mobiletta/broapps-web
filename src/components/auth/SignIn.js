@@ -32,10 +32,12 @@ class SignIn extends Component {
     if (auth.uid) return <Redirect to='/' /> 
     return (
       <div className="container">
-        <VideoBg poster={poster}>
-          <VideoBg.Source src={webm} type="video/webm" />
-          <VideoBg.Source src={mp4} type="video/mp4" />
-        </VideoBg>
+        <div className="background-video">
+          <VideoBg poster={poster}>
+            <VideoBg.Source src={webm} type="video/webm" />
+            <VideoBg.Source src={mp4} type="video/mp4" />
+          </VideoBg>
+        </div>
         <div className="box">
         <h2>Sign In</h2>
         <div className="form">
