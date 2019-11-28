@@ -2,12 +2,16 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { signIn } from '../../store/actions/authActions'
 import { Redirect } from 'react-router-dom'
-//import { startLogin } from '../actions/auth';
 import VideoBg from 'reactjs-videobg';
 import webm from '../../media/Vegas.webm';
 import mp4 from '../../media/Vegas.mp4';
 import poster from '../../media/Vegas_First_Frame.png';
-//import { GoogleLoginButton, GithubLoginButton, FacebookLoginButton, TwitterLoginButton, AmazonLoginButton, InstagramLoginButton, LinkedInLoginButton, MicrosoftLoginButton } from "react-social-login-buttons";
+//import { GoogleLoginButton, InstagramLoginButton } from "react-social-login-buttons";
+import { firebase } from '../../store/createReduxStore';
+import app from 'firebase/app';
+import 'firebase/auth';
+import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+
 
 import "./Login.css";
 import "./InputBox.css";
@@ -50,6 +54,7 @@ class SignIn extends Component {
             <label htmlFor="password">Password</label>
             <input type="password" id='password' onChange={this.handleChange} />
           </div>
+          <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>
           <div className="inputBox">
             <button className="btn pink lighten-1 z-depth-0">Login</button>
             <div className="center red-text">
@@ -63,6 +68,44 @@ class SignIn extends Component {
     )
   }
 }
+
+// Configure FirebaseUI.
+const uiConfig = {
+  // Popup signin flow rather than redirect flow.
+  signInFlow: 'popup',
+  // Redirect to /signedIn after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
+  signInSuccessUrl: '/',
+  // We will display Google and Facebook as auth providers.
+  signInOptions: [
+    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    firebase.auth.FacebookAuthProvider.PROVIDER_ID
+  ]
+};
+
+//const startLogin = () => {
+//  return () => {
+/*    var credential = firebase.auth.GoogleAuthProvider.credential(
+      googleUser.getAuthResponse().id_token);
+
+    var credential = firebase.auth.FacebookAuthProvider.credential(
+      response.authResponse.accessToken);
+    var credential = firebase.auth.EmailAuthProvider.credential(email, password);
+    var provider = new firebase.auth.TwitterAuthProvider();
+    var provider = new firebase.auth.OAuthProvider('microsoft.com');
+    var provider = new firebase.auth.OAuthProvider('yahoo.com');
+
+        
+    firebase.auth().currentUser.linkAndRetrieveDataWithCredential(credential).then(function(usercred) {
+    var user = usercred.user;
+      console.log("Anonymous account successfully upgraded", user);
+    }, function(error) {
+      console.log("Error upgrading anonymous account", error);
+    });*/
+//    var googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+//    return firebase.auth().signInWithPopup(googleAuthProvider);
+    //return firebase.auth().signInWithRedirect(githubAuthProvider);
+//  };
+//};
 
 const mapStateToProps = (state) => {
   return{

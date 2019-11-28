@@ -1,9 +1,93 @@
-import React from "react";
+import React from 'react';
+import { Box } from 'grommet';
+//import 'golden-layout/src/css/goldenlayout-base.css';
+//import 'golden-layout/src/css/goldenlayout-translucent-theme.css';
+import './Servers.styles.scss';
+import interact, { draggable } from 'interactjs';
+//import GoldenLayout, { Row, Stack, createGoldenLayoutComponent } from 'react-golden-layout';
+//import { Foo, Bar } from '../components/views';
 
-import { Box, Heading } from "grommet";
+const position = { x: 0, y: 0 };
+
+interact('.window').draggable({
+  listeners: {
+    start(event) {
+      console.log(event.type, event.target);
+    },
+    move(event) {
+      position.x += event.dx;
+      position.y += event.dy;
+
+      event.target.style.transform = `translate(${position.x}px, ${position.y}px)`;
+    },
+  },
+});
 
 export const Servers = () => (
   <Box fill align="center" justify="center">
-    <Heading>NFL</Heading>
+    <div id="bod">
+      <div class="window active-window" id="win">
+        <div class="winbg">
+          <h1>Odds Board</h1>
+        </div>
+        <div class="blur-shadow"></div>
+      </div>
+
+      <div class="window special-case">
+        <div class="winbg">
+          <h1>Betting Slips</h1>
+        </div>
+        <div class="blur-shadow"></div>
+      </div>
+
+      <div class="window special-case">
+        <div class="winbg">
+          <h1>Game Countdown</h1>
+        </div>
+        <div class="blur-shadow"></div>
+      </div>
+
+      <div class="window special-case">
+        <div class="winbg">
+          <h1>Bet Selection</h1>
+        </div>
+        <div class="blur-shadow"></div>
+      </div>
+
+      <div class="window room">
+        <div class="winbg">
+          <h1>Room</h1>
+        </div>
+        <div class="blur-shadow"></div>
+      </div>
+
+      <div class="window room">
+        <div class="winbg">
+          <h1>Room</h1>
+        </div>
+        <div class="blur-shadow"></div>
+      </div>
+
+      <div class="window room">
+        <div class="winbg">
+          <h1>Room</h1>
+        </div>
+        <div class="blur-shadow"></div>
+      </div>
+
+      <div class="window room">
+        <div class="winbg">
+          <h1>Room</h1>
+        </div>
+        <div class="blur-shadow"></div>
+      </div>
+
+      <div class="window room">
+        <div class="winbg">
+          <h1>Room</h1>
+        </div>
+        <div class="blur-shadow"></div>
+      </div>
+    </div>
   </Box>
 );

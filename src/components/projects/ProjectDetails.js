@@ -17,7 +17,7 @@ const ProjectDetails = (props) => {
             <p>{project.content}</p>s
           </div>
           <div className="card-action grey lighten-4 grey-text">
-            <div>Posted by {project.authorFirstName} {project.authorLastName}</div>
+            <div>Placed by {project.authorFirstName} {project.authorLastName}</div>
             <div>{moment(project.createdAt.toDate()).calendar()}</div>
           </div>
         </div>
@@ -26,7 +26,7 @@ const ProjectDetails = (props) => {
   } else {
     return (
       <div className="container center">
-        <p>Loading project...</p>
+        <p>Loading bet...</p>
       </div>
     )
   }

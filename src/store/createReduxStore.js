@@ -30,6 +30,7 @@ const firestoreProps = {
 }
 
 export {
+    firebase,
     store,
     firestoreProps
 }

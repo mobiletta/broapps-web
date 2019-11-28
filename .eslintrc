@@ -1,15 +1,25 @@
 {
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": true
+  },
   "settings": {
-      "import/resolver": {
-        "node": {
-          "moduleDirectory": ["node_modules", "src/"]
-        }
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["node_modules", "src/"]
       }
-    },
-    "rules": {
-      "jsx-a11y/anchor-is-valid": [ "error", {
-        "components": [ "Link" ],
-        "specialLink": [ "to" ]
-      }]
     }
+  },
+  "rules": {
+    "strict": 0,
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["to"]
+      }
+    ]
   }
+}
