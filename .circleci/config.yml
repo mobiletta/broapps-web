@@ -92,4 +92,4 @@ jobs:
           success_message: ':tada: A $CIRCLE_JOB job has succeeded!'
           failure_message: ':red_circle: A $CIRCLE_JOB job has failed!'
           only_for_branches: master,test,dev
-          webhook: '${SLACK_WEBHOOK}'    
+          webhook: '${SLACK_WEBHOOK}'
