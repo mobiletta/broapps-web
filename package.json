@@ -62,8 +62,8 @@
     "functions:watch": "npm run watch --prefix functions",
     "functions:build": "npm run build --prefix functions",
     "functions:test": "npm run test --prefix functions",
-    "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx,json}' ",
-    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss,sass}' "
+    "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx,json}'",
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss,sass}'"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
@@ -93,6 +93,18 @@
     "progress-bar-webpack-plugin": "^1.12.1",
     "stylelint": "^12.0.0",
     "webpack-bundle-analyzer": "^3.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx}": [
+      "eslint --fix",
+      "pretty-quick — staged",
+      "git add"
+    ]
   },
   "browserslist": {
     "production": [
