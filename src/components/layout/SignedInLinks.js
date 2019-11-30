@@ -8,7 +8,7 @@ const SignedInLinks = props => {
     <div>
       <ul className="right">
         <li>
-          <NavLink to="/create">Odds</NavLink>
+          <NavLink to="/odds">Odds</NavLink>
         </li>
         <li>
           <NavLink to="/create">My Bets</NavLink>

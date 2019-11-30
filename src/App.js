@@ -7,6 +7,7 @@ import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import Home from './components/auth/Home';
 import CreateProject from './components/projects/CreateProject';
+import OddsList from './components/odds/OddsList';
 
 import { Box, Grommet } from 'grommet';
 import { Grommet as GrommetIcon, Group, SettingsOption, Servers as ServersIcon } from 'grommet-icons';
@@ -65,7 +66,8 @@ class App extends Component {
               <Box flex>
                 <Switch>
                   <Route path="/" exact component={Home} />
-                  <Route path="/servers" component={Servers} />{/* was template server page */}
+                  <Route path="/servers" component={Servers} />
+                  {/* was template server page */}
                   <Route path="/users" component={Users} /> {/* was template user page */}
                   <Route path="/settings" component={Settings} /> {/* was template settings page */}
                   <Route path="/project/:id" component={ProjectDetails} />
@@ -73,6 +75,7 @@ class App extends Component {
                   <Route path="/signin" component={SignIn} />
                   <Route path="/signup" component={SignUp} />
                   <Route path="/create" component={CreateProject} />
+                  <Route path="/odds" component={OddsList} />
                   <Route component={NotFound} />
                 </Switch>
               </Box>
