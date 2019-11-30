@@ -6,8 +6,6 @@ import webm from '../../media/Vegas.webm';
 import mp4 from '../../media/Vegas.mp4';
 import poster from '../../media/Vegas_First_Frame.png';
 //import { GoogleLoginButton, InstagramLoginButton } from "react-social-login-buttons";
-import { firebase } from '../../store/createReduxStore';
-import app from 'firebase/app';
 import 'firebase/auth';
 
 import './Login.css';

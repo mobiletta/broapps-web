@@ -8,6 +8,7 @@ import mp4 from '../../media/Vegas.mp4';
 import poster from '../../media/Vegas_First_Frame.png';
 //import { GoogleLoginButton, InstagramLoginButton } from "react-social-login-buttons";
 import { firebase } from '../../store/createReduxStore';
+// eslint-disable-next-line no-unused-vars
 import app from 'firebase/app';
 import 'firebase/auth';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
