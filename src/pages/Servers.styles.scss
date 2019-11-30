@@ -1,20 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 $bg: 'https://bro-media.s3.amazonaws.com/images/backgrounds/AdobeStock_88993970_2400x1200.png';
 
-#bod {
-  height: 100vh;
-  width: 100vw;
+body {
+
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-image: url($bg);
-  background-size: cover;
 }
 
 .window {
@@ -36,7 +28,6 @@ $bg: 'https://bro-media.s3.amazonaws.com/images/backgrounds/AdobeStock_88993970_
   left: 0px;
   bottom: 0px;
   right: 0px;
-  background-image: -moz-element(#bod);
   background-attachment: fixed;
   filter: brightness(0.9) blur(5px);
   z-index: -1;
@@ -45,6 +36,7 @@ $bg: 'https://bro-media.s3.amazonaws.com/images/backgrounds/AdobeStock_88993970_
 
 .active-window {
   z-index: 999;
+  color: white;
 
   .blur-shadow {
     top: -20px;
@@ -64,6 +56,15 @@ p {
 
 a {
   color: inherit;
+}
+
+.odds .winbg {
+  background-color: rgba(17, 0, 255, 0.2);
+  color: white;
+
+  h1 {
+    color: rgb(252, 253, 252);
+  }
 }
 
 .special-case .winbg {

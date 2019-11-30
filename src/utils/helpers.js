@@ -1,4 +1,4 @@
-import { DocumentSnapshot } from "@google-cloud/firestore";
+/* import { DocumentSnapshot } from "@google-cloud/firestore";
 
 const dataFromSnapshot = (snapshot) => {
     if (!snapshot.exists)
@@ -8,4 +8,4 @@ const dataFromSnapshot = (snapshot) => {
         ...data,
         id: snapshot.id
     };
-};
+}; */

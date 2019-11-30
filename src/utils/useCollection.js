@@ -1,4 +1,4 @@
-import _ from "lodash";
+/* import _ from "lodash";
 import { map, filter } from "lodash/fp";
 import { useEffect } from "react";
 import { Query } from "@google-cloud/firestore";
@@ -18,3 +18,4 @@ export const useCollection = (query, handlers, deps) => {
         };
     }, deps); // eslint-disable-line react-hooks/exhaustive-deps
 };
+ */

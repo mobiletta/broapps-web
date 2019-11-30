@@ -13,6 +13,16 @@
         "corejs": 3,
         "regenerator": true
       }
-    ]
+    ],
+    ["@babel/plugin-transform-arrow-functions"],
+    ["@babel/plugin-proposal-object-rest-spread"],
+    ["@babel/plugin-proposal-export-default-from"],
+    ["@babel/plugin-proposal-export-namespace-from"],
+    ["@babel/plugin-proposal-decorators"],
+    ["@babel/plugin-proposal-pipeline-operator", { "proposal": "minimal" }],
+    ["@babel/transform-async-to-generator", { "module": "bluebird", "method": "coroutine" }],
+    ["@babel/plugin-syntax-dynamic-import"],
+    ["@babel/plugin-transform-react-display-name"],
+    ["dynamic-import-node"]
   ]
 }

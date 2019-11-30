@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+/* import { useEffect } from "react";
 import { DocumentReference } from "@google-cloud/firestore";
 
 export const useDoc = (getDocReference, handlers, deps) => {
@@ -10,4 +10,4 @@ export const useDoc = (getDocReference, handlers, deps) => {
             unsubscribeFromDoc();
         };
     }, deps); // eslint-disable-line react-hooks/exhaustive-deps
-};
+}; */

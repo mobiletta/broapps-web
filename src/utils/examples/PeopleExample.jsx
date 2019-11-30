@@ -1,4 +1,4 @@
-import _ from "lodash";
+/* import _ from "lodash";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Firestore } from "@google-cloud/firestore";
@@ -20,3 +20,4 @@ export const PeopleComponent = ({ hairColor }) => {
             " hair."),
         React.createElement("ul", null, _.map(people, person => (React.createElement("li", { key: person.id }, person.name))))));
 };
+ */

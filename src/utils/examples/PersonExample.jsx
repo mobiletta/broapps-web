@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Firestore } from "@google-cloud/firestore";
 const firestore = new Firestore();
@@ -21,3 +21,4 @@ export const PersonComponent = ({ personId }) => {
             "Hair Color: ",
             hairColor)));
 };
+ */
