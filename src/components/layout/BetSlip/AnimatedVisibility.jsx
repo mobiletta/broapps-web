@@ -1,14 +1,8 @@
-import React, { useEffect, useState } from "react";
-import PropTypes from "prop-types";
-import { Animated } from "react-animated-css";
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import { Animated } from 'react-animated-css';
 
-function AnimatedVisibility({
-  visible,
-  children,
-  animationOutDuration,
-  disappearOffset,
-  ...rest
-}) {
+function AnimatedVisibility({ visible, children, animationOutDuration, disappearOffset, ...rest }) {
   const [noDisplay, setNoDisplay] = useState(!visible);
   useEffect(() => {
     if (!visible) {
@@ -17,7 +11,7 @@ function AnimatedVisibility({
     } else setNoDisplay(false);
   }, [visible]);
 
-  const style = noDisplay ? { display: "none" } : null;
+  const style = noDisplay ? { display: 'none' } : null;
   return (
     <Animated isVisible={visible} style={style} {...rest}>
       {children}
@@ -28,38 +22,20 @@ function AnimatedVisibility({
 AnimatedVisibility.defaultProps = {
   animationOutDuration: 1000,
   disappearOffset: 350,
-  visible: true
+  visible: true,
 };
 
 AnimatedVisibility.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.arrayOf(PropTypes.node),
-    PropTypes.node
-  ]),
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]),
   animationOutDuration: PropTypes.number,
   disappearOffset: PropTypes.number,
-  visible: PropTypes.bool
+  visible: PropTypes.bool,
 };
 
-function makeAnimated(
-  Component,
-  animationIn,
-  animationOut,
-  animationInDuration,
-  animationOutDuration,
-  disappearOffset
-) {
+function makeAnimated(Component, animationIn, animationOut, animationInDuration, animationOutDuration, disappearOffset) {
   return function({ open, className, ...props }) {
     return (
-      <AnimatedVisibility
-        visible={open}
-        animationIn={animationIn}
-        animationOut={animationOut}
-        animationInDuration={animationInDuration}
-        animationOutDuration={animationOutDuration}
-        disappearOffset={disappearOffset}
-        className={className}
-      >
+      <AnimatedVisibility visible={open} animationIn={animationIn} animationOut={animationOut} animationInDuration={animationInDuration} animationOutDuration={animationOutDuration} disappearOffset={disappearOffset} className={className}>
         <Component {...props} />
       </AnimatedVisibility>
     );
@@ -67,11 +43,11 @@ function makeAnimated(
 }
 
 export function makeAnimationSlideLeft(Component) {
-  return makeAnimated(Component, "slideInLeft", "slideOutLeft", 400, 500, 200);
+  return makeAnimated(Component, 'slideInLeft', 'slideOutLeft', 400, 500, 200);
 }
 
 export function makeAnimationSlideUpDown(Component) {
-  return makeAnimated(Component, "slideInDown", "slideOutUp", 400, 500, 200);
+  return makeAnimated(Component, 'slideInDown', 'slideOutUp', 400, 500, 200);
 }
 
 export default AnimatedVisibility;

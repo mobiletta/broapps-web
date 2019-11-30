@@ -1,18 +1,8 @@
-import React, { useState } from "react";
-import AnimatedVisibility from "./AnimatedVisibility";
+import React, { useState } from 'react';
+import AnimatedVisibility from './AnimatedVisibility';
 import './Bets.css';
 
-const colors = [
-  "#6690FF",
-  "#6CD566",
-  "#50E5FF",
-  "#FFDC75",
-  "#FF7C83",
-  "#FF702D",
-  "#FFAA42",
-  "#7F7B82",
-  "#4D7EA8"
-];
+const colors = ['#6690FF', '#6CD566', '#50E5FF', '#FFDC75', '#FF7C83', '#FF702D', '#FFAA42', '#7F7B82', '#4D7EA8'];
 
 export default function Bet({ team }) {
   const [color] = useState(colors[Math.floor(Math.random() * 9)]);
@@ -31,15 +21,8 @@ export default function Bet({ team }) {
   };
 
   return (
-    <AnimatedVisibility
-      visible={visible}
-      animationIn="zoomIn"
-      animationOut="zoomOut"
-    >
-      <div
-        className={`row dashboard-cards ${condition ? " showing" : ""}`}
-        onClick={handleClick}
-      >
+    <AnimatedVisibility visible={visible} animationIn="zoomIn" animationOut="zoomOut">
+      <div className={`row dashboard-cards ${condition ? ' showing' : ''}`} onClick={handleClick}>
         <div className="card col-md-4">
           <div className="card-title">
             <h2>
@@ -48,10 +31,7 @@ export default function Bet({ team }) {
             </h2>
             <div className="task-count">$100</div>
           </div>
-          <div
-            className={`card-flap flap1 ${condition ? " d-card-show" : ""}`}
-            onClick={handleClick}
-          >
+          <div className={`card-flap flap1 ${condition ? ' d-card-show' : ''}`} onClick={handleClick}>
             <div className="card-description">
               <ul className="task-list">
                 <li>

@@ -1,14 +1,10 @@
-import React, {Fragment, useState} from "react";
-import {makeAnimationSlideLeft, makeAnimationSlideUpDown} from "./AnimatedVisibility";
-import Bets from "./Bets";
-import "./BetSlips.css";
+import React, { Fragment, useState } from 'react';
+import { makeAnimationSlideLeft, makeAnimationSlideUpDown } from './AnimatedVisibility';
+import Bets from './Bets';
+import './BetSlips.css';
 
 function ToggleButton({ label, isOpen, onClick }) {
-  const icon = isOpen ? (
-    <i className="fas fa-toggle-off fa-lg" />
-  ) : (
-    <i className="fas fa-toggle-on fa-lg" />
-  );
+  const icon = isOpen ? <i className="fas fa-toggle-off fa-lg" /> : <i className="fas fa-toggle-on fa-lg" />;
   return (
     <button className="toggle" onClick={onClick}>
       {label} {icon}
@@ -57,17 +53,13 @@ function App() {
     <Fragment>
       <main className="main">
         <header className="bar header">
-          <ToggleButton
-            label="Sidebar"
-            isOpen={sidebarIsOpen}
-            onClick={toggleSidebar}
-          />
+          <ToggleButton label="Sidebar" isOpen={sidebarIsOpen} onClick={toggleSidebar} />
           <ToggleButton label="Navbar" isOpen={navIsOpen} onClick={toggleNav} />
         </header>
-          <AnimatedNavbar open={navIsOpen} />
+        <AnimatedNavbar open={navIsOpen} />
         <Boxes />
       </main>
-      <AnimatedSidebar open={sidebarIsOpen} className="on-top"/>
+      <AnimatedSidebar open={sidebarIsOpen} className="on-top" />
     </Fragment>
   );
 }

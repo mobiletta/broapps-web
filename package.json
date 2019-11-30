@@ -18,6 +18,7 @@
     "grommet": "^2.8.0",
     "grommet-icons": "^4.4.0",
     "history": "^4.10.1",
+    "immutable": "^4.0.0-rc.12",
     "interactjs": "^1.7.2",
     "moment": "^2.24.0",
     "node-notifier": "^6.0.0",

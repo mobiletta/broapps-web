@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Box, Heading } from "grommet";
+import { Box, Heading } from 'grommet';
 
 export const Settings = () => (
   <Box fill align="center" justify="center">

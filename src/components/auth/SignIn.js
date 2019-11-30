@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { signIn } from '../../store/actions/authActions'
-import { Redirect } from 'react-router-dom'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { signIn } from '../../store/actions/authActions';
+import { Redirect } from 'react-router-dom';
 import VideoBg from 'reactjs-videobg';
 import webm from '../../media/Vegas.webm';
 import mp4 from '../../media/Vegas.mp4';
@@ -12,28 +12,26 @@ import app from 'firebase/app';
 import 'firebase/auth';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
-
-import "./Login.css";
-import "./InputBox.css";
-
+import './Login.css';
+import './InputBox.css';
 
 class SignIn extends Component {
   state = {
     email: '',
-    password: ''
-  }
-  handleChange = (e) => {
+    password: '',
+  };
+  handleChange = e => {
     this.setState({
-      [e.target.id]: e.target.value
-    })
-  }
-  handleSubmit = (e) => {
+      [e.target.id]: e.target.value,
+    });
+  };
+  handleSubmit = e => {
     e.preventDefault();
-    this.props.signIn(this.state)
-  }
+    this.props.signIn(this.state);
+  };
   render() {
     const { authError, auth } = this.props;
-    if (auth.uid) return <Redirect to='/' /> 
+    if (auth.uid) return <Redirect to="/" />;
     return (
       <div className="container">
         <div className="background-video">
@@ -43,29 +41,27 @@ class SignIn extends Component {
           </VideoBg>
         </div>
         <div className="box">
-        <h2>Sign In</h2>
-        <div className="form">
-        <form onSubmit={this.handleSubmit}>
-          <div className="inputBox">
-            <label htmlFor="email">Email</label>
-            <input type="email" id='email' onChange={this.handleChange} />
+          <h2>Sign In</h2>
+          <div className="form">
+            <form onSubmit={this.handleSubmit}>
+              <div className="inputBox">
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" onChange={this.handleChange} />
+              </div>
+              <div className="inputBox">
+                <label htmlFor="password">Password</label>
+                <input type="password" id="password" onChange={this.handleChange} />
+              </div>
+              <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
+              <div className="inputBox">
+                <button className="btn pink lighten-1 z-depth-0">Login</button>
+                <div className="center red-text">{authError ? <p>{authError}</p> : null}</div>
+              </div>
+            </form>
           </div>
-          <div className="inputBox">
-            <label htmlFor="password">Password</label>
-            <input type="password" id='password' onChange={this.handleChange} />
-          </div>
-          <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()}/>
-          <div className="inputBox">
-            <button className="btn pink lighten-1 z-depth-0">Login</button>
-            <div className="center red-text">
-              { authError ? <p>{authError}</p> : null }
-            </div>
-          </div>
-        </form>
-        </div>
         </div>
       </div>
-    )
+    );
   }
 }
 
@@ -76,10 +72,7 @@ const uiConfig = {
   // Redirect to /signedIn after sign in is successful. Alternatively you can provide a callbacks.signInSuccess function.
   signInSuccessUrl: '/dashboard',
   // We will display Google and Facebook as auth providers.
-  signInOptions: [
-    firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-    firebase.auth.FacebookAuthProvider.PROVIDER_ID
-  ]
+  signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID, firebase.auth.FacebookAuthProvider.PROVIDER_ID],
 };
 
 //const startLogin = () => {
@@ -103,21 +96,21 @@ const uiConfig = {
     });*/
 //    var googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 //    return firebase.auth().signInWithPopup(googleAuthProvider);
-    //return firebase.auth().signInWithRedirect(githubAuthProvider);
+//return firebase.auth().signInWithRedirect(githubAuthProvider);
 //  };
 //};
 
-const mapStateToProps = (state) => {
-  return{
-    authError: state.auth.authError,
-    auth: state.firebase.auth
-  }
-}
-
-const mapDispatchToProps = (dispatch) => {
+const mapStateToProps = state => {
   return {
-    signIn: (creds) => dispatch(signIn(creds))
-  }
-}
+    authError: state.auth.authError,
+    auth: state.firebase.auth,
+  };
+};
 
-export default connect(mapStateToProps, mapDispatchToProps)(SignIn)
+const mapDispatchToProps = dispatch => {
+  return {
+    signIn: creds => dispatch(signIn(creds)),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SignIn);

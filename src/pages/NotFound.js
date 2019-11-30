@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { Box, Heading, Paragraph } from "grommet";
-import { Halt } from "grommet-icons";
+import { Box, Heading, Paragraph } from 'grommet';
+import { Halt } from 'grommet-icons';
 
 export const NotFound = () => (
-  <Box fill align="center" pad={{ top: "large", horizontal: "small" }}>
+  <Box fill align="center" pad={{ top: 'large', horizontal: 'small' }}>
     <Halt size="xlarge" />
     <Heading textAlign="center" level="2">
       Oh, snap!

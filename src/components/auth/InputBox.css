@@ -55,19 +55,19 @@
 }
 
 .box p {
-  color: #ffffff
+  color: #ffffff;
 }
 
 .box .inputBox input:focus ~ label,
 .box .inputBox input:valid ~ label,
-.box .inputBox input:not([value=""]) ~ label {
+.box .inputBox input:not([value='']) ~ label {
   top: -1.125rem;
   left: 0;
   color: #03a9f4;
   font-size: 1.25rem;
 }
 
-.box input[type="submit"] {
+.box input[type='submit'] {
   border: none;
   outline: none;
   color: #fff;
@@ -78,10 +78,10 @@
   font-size: 2rem;
 }
 
-.box input[type="submit"]:hover {
+.box input[type='submit']:hover {
   background-color: #1cb1f5;
 }
 
-.background-video{
-  background: rgba(255,255,255,0);
+.background-video {
+  background: rgba(255, 255, 255, 0);
 }
