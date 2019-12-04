@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Player } from 'video-react';
+import { Player, BigPlayButton, ControlBar, PlayToggle, VolumeMenuButton } from 'video-react';
 
 export default class TrailerPlayer extends Component {
   constructor(props, context) {
@@ -34,12 +34,18 @@ export default class TrailerPlayer extends Component {
     return (
       <div>
         <Player
+          autoPlay
           ref={player => {
             this.player = player;
           }}
           videoId="video-1"
+          src={this.state.playerSource}
         >
-          <source src={this.state.playerSource} />
+          <BigPlayButton position="center" />
+          <ControlBar autoHide={false} disableDefaultControls={true}>
+            <PlayToggle />
+            <VolumeMenuButton vertical />
+          </ControlBar>
         </Player>
       </div>
     );
