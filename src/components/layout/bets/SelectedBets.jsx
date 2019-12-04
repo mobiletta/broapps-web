@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import Bet from './Bet';
-import './Bets.css';
+import SelectedBet from './SelectedBet';
+import superb from 'superb';
+import './SelectedBets.css';
 
-export default function Bets() {
+export default function SelectedBets() {
   const startingteams = [];
   for (let i = 0; i < 5; i++) {
     startingteams[i] = superb.random();
@@ -12,7 +13,7 @@ export default function Bets() {
   return (
     <div className="boxes">
       {teams.map(team => (
-        <Bet key={team} team={team} />
+        <SelectedBet key={team} team={team} />
       ))}
     </div>
   );

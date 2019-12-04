@@ -1,6 +1,8 @@
+//import { FireSQL } from 'firesql';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
+import 'firesql/rx';
 import 'firebase/firestore';
 import { createStore, applyMiddleware, compose } from 'redux';
 //import { compose, applyMiddleware, createStore } from 'react-redux-firebase';

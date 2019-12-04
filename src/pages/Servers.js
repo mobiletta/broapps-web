@@ -4,6 +4,7 @@ import { Box } from 'grommet';
 //import 'golden-layout/src/css/goldenlayout-translucent-theme.css';
 import './Servers.styles.scss';
 import interact from 'interactjs';
+import { SelectedBet } from '../components/layout/bets';
 //import GoldenLayout, { Row, Stack, createGoldenLayoutComponent } from 'react-golden-layout';
 //import { Foo, Bar } from '../components/views';
 
@@ -42,7 +43,9 @@ export const Servers = () => (
 
       <div class="window special-case">
         <div class="winbg">
-          <h1>Bet Selection</h1>
+          <h1>
+            <SelectedBet />
+          </h1>
         </div>
         <div class="blur-shadow"></div>
       </div>
@@ -56,3 +59,5 @@ export const Servers = () => (
     </div>
   </Box>
 );
+
+export default Servers;

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import superb from 'superb';
 import AnimatedVisibility from './AnimatedVisibility';
-import './Bets.css';
 
 const colors = ['#6690FF', '#6CD566', '#50E5FF', '#FFDC75', '#FF7C83', '#FF702D', '#FFAA42', '#7F7B82', '#4D7EA8'];
 
-export default function Bet({ team }) {
+function Box({ team }) {
   const [color] = useState(colors[Math.floor(Math.random() * 9)]);
   const [visible, setVisible] = useState(true);
   const [condition, setCondition] = useState(false);
@@ -62,13 +62,22 @@ export default function Bet({ team }) {
           </div>
         </div>
       </div>
-
-      <div className="box" style={style}>
-        <div className="center">{team}</div>
-        <button className="bottom-corner" onClick={hideMe}>
-          <i className="center far fa-eye fa-lg" />
-        </button>
-      </div>
     </AnimatedVisibility>
+  );
+}
+
+export default function Boxes() {
+  const startingteams = [];
+  for (let i = 0; i < 5; i++) {
+    startingteams[i] = superb.random();
+  }
+  const [teams] = useState(startingteams);
+
+  return (
+    <div className="boxes">
+      {teams.map(team => (
+        <Box key={team} team={team} />
+      ))}
+    </div>
   );
 }

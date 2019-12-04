@@ -1,0 +1,169 @@
+/* body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .noUi-horizontal {
+      height: 10px;
+  }
+  
+  .noUi-connect {
+    background: #EF333A;
+    border: 0;
+    box-shadow: none !important;
+    border-radius: 10px;
+  }
+  
+  .noUi-background {
+    background: #e3e3e3;
+    border-radius: 10px;
+  }
+  
+  .noUi-handle {
+    width: 40px !important;
+    height: 40px !important;
+    top: -15px !important;
+    border-radius: 20px;
+    background: #EF333A;
+    box-shadow: none !important;
+    border: 0;
+  }
+  
+  .noUi-handle:before {
+    opacity: 0;
+  }
+  
+  .noUi-handle:after {
+    opacity: 0;
+  }
+  
+  hr {
+    border: 0;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .maxWrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .quarter {
+    width: 25%;
+  }
+  
+  .third {
+    width: 33.3333%;
+  }
+  
+  .two-thirds {
+    width: 66.6666%;
+  }
+  
+  .half {
+    width: 50%;
+  }
+  
+  .clear:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .none {
+    display: none
+  }
+  
+  .opacity {
+    opacity: 0;
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+  
+  input,
+  select,
+  label {
+    width: 100%;
+  }
+  
+  input:disabled {
+    background: #efefef;
+  }
+  
+  label {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: #3a3a3a;
+    
+  }
+  
+  input,
+  select {
+    -webkit-appearance: none;
+    outline: none;
+    background: #fff;
+    border: 0;
+    border-bottom: 1px solid #ebebeb; 
+    border-right: 1px solid #ebebeb;
+    border-radius: 0;
+    display: inline-block;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+  
+  .last {
+    border-right: 0;
+  }
+  
+  .mb20 {
+    margin-bottom: 20px;
+  }
+  
+  .mb40 {
+    margin-bottom: 40px;
+  }
+  
+  .input-container {
+    margin-bottom: 20px;
+  }
+  
+  #amount-input {
+    margin-bottom: 1px;
+  }
+  
+  #bankroll-input {
+    margin-bottom: 1px;
+  }
+  
+  
+  #calculator-wrapper {
+    padding: 30px;
+  }
+  
+  .output {
+    font-size: 12px;
+    font-weight: 300;
+    padding-top: 20px;
+  }
+  
+  .output #loan-repayment {
+    font-size: 22px;
+    margin-right: 5px;
+    font-weight: 500;
+  }
+  
+  .output .title {
+    margin-bottom: 5px;
+  }
+  
+  .info {
+    font-size: 10px;
+  } */

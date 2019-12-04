@@ -13,7 +13,22 @@ import { Box, Grommet } from 'grommet';
 import { Grommet as GrommetIcon, Group, SettingsOption, Servers as ServersIcon } from 'grommet-icons';
 
 import Sidebar from './components/nav/Sidebar';
-import { NotFound, Servers, Settings, Users } from './pages';
+import { NotFound, Servers, Settings, Users, Trailer } from './pages';
+
+/* var board = new DepartureBoard (document.getElementById ('test'), { rowCount: 5, letterCount: 32 }); 
+			board.setValue (['14:30  SN 3205 VENICE      4-5 A ',
+							 '14:50  SN 3737 MALAGA      4-5 A',
+							 '14:50  fq 6918 DJERBA     11-  B',
+							 '14:50  EZY4096 NICE       10-  A',
+							 '15:55  KL 1726 AMSTERDAM   7-  A']);
+
+			window.setTimeout (function () {
+				board.setValue (['17:00  RJ  106 AMMAN       1-  B',
+								'17:05  JAF6587 DJERBA     12-  B',
+								'17:10  SN 2721 GENEVA      4-5 A',
+								'17:15  FQ 6166 HURGHADA   11-  B',
+								'17:20  8B 8161 OUJDA        -   ']);
+			}, 18000); */
 
 const mediaBackgroundTheme = {
   grommet: {
@@ -52,6 +67,11 @@ const items = [
     Icon: SettingsOption,
     path: '/settings',
   },
+  {
+    label: 'TRAILER',
+    Icon: SettingsOption,
+    path: '/trailer',
+  },
 ];
 
 class App extends Component {
@@ -66,6 +86,7 @@ class App extends Component {
               <Box flex>
                 <Switch>
                   <Route path="/" exact component={Home} />
+                  <Route path="/trailer" component={Trailer} />
                   <Route path="/servers" component={Servers} />
                   {/* was template server page */}
                   <Route path="/users" component={Users} /> {/* was template user page */}
