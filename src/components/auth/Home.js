@@ -8,9 +8,6 @@ import poster from '../../media/Vegas_First_Frame.png';
 //import { GoogleLoginButton, InstagramLoginButton } from "react-social-login-buttons";
 import 'firebase/auth';
 
-import './Login.css';
-import './InputBox.css';
-
 class Home extends Component {
   state = {
     email: '',

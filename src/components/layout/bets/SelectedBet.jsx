@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AnimatedVisibility from '../../views/BetSlip/AnimatedVisibility';
-import './SelectedBets.css';
+import './SelectedBets.module.css';
 
 export default function SelectedBet({ team }) {
   const [visible] = useState(true);

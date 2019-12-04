@@ -2,7 +2,7 @@ import React from 'react';
 import { Box } from 'grommet';
 //import 'golden-layout/src/css/goldenlayout-base.css';
 //import 'golden-layout/src/css/goldenlayout-translucent-theme.css';
-import './Servers.styles.scss';
+import './Servers.module.scss';
 import interact from 'interactjs';
 import { SelectedBet } from '../components/layout/bets';
 //import GoldenLayout, { Row, Stack, createGoldenLayoutComponent } from 'react-golden-layout';

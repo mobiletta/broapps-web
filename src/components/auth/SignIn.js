@@ -13,8 +13,8 @@ import app from 'firebase/app';
 import 'firebase/auth';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
-import './Login.css';
-import './InputBox.css';
+import './Login.module.css';
+import './InputBox.module.css';
 
 class SignIn extends Component {
   state = {

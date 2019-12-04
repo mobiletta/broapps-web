@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SelectedBet from './SelectedBet';
 import superb from 'superb';
-import './SelectedBets.css';
+import './SelectedBets.module.css';
 
 export default function SelectedBets() {
   const startingteams = [];

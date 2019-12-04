@@ -1,5 +1,5 @@
 import React from 'react';
-import './OddsBoard.css';
+import './OddsBoard.module.css';
 
 var DepartureBoard = function(element, options) {
   options = options || {};

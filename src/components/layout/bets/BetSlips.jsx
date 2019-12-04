@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import SelectedBets from './SelectedBets';
-import './BetSlips.css';
+import './BetSlips.module.css';
 
 export default function BetSlips() {
   return (

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './BetSlip.module.scss';
 
 class BetSlip extends Component {
   render() {

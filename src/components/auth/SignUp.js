@@ -7,8 +7,8 @@ import webm from '../../media/Vegas.webm';
 import mp4 from '../../media/Vegas.mp4';
 import poster from '../../media/Vegas_First_Frame.png';
 
-import './Login.css';
-import './InputBox.css';
+import './Login.module.css';
+import './InputBox.module.css';
 
 class SignUp extends Component {
   state = {
