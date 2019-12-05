@@ -10,14 +10,32 @@ const receiveOdds = data => ({
   odds: data,
 });
 
+function getOddsPointSpread() {
+  return axios.get(`${apiUrl}spreads`);
+}
+
+function getOddsMoneyline() {
+  return axios.get(`${apiUrl}h2h`);
+}
+
+function getOddsTotals() {
+  return axios.get(`${apiUrl}totals`);
+}
+
 export const getPointSpreads = () => {
   return dispatch => {
     return axios
-      .get(`${apiUrl}spreads`)
-      .then(response => {
-        console.log(response);
-        dispatch(receiveOdds(response.data));
-      })
+      .all([getOddsPointSpread(), getOddsMoneyline(), getOddsTotals()])
+      .then(
+        axios.spread(function(spreads, moneylines, totals) {
+          console.log(spreads);
+          console.log(moneylines);
+          console.log(totals);
+          //let vehicles = seat.data.concat(volkswagen.data);
+          let oddsData = spreads.data;
+          dispatch(receiveOdds(oddsData));
+        }),
+      )
       .catch(error => {
         dispatch({ type: 'FETCH_DATA_REJECTED', odds: error });
       });

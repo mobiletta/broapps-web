@@ -43,12 +43,12 @@ export const Servers = () => (
 
       <div class="window special-case">
         <div class="winbg">
-          <h1>
-            <SelectedBet />
-          </h1>
+          <h1>Bets</h1>
         </div>
         <div class="blur-shadow"></div>
       </div>
+
+      <SelectedBet />
 
       <div class="window room">
         <div class="winbg">

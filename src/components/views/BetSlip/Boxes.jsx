@@ -27,7 +27,7 @@ function Box({ team }) {
         <div className="card col-md-4">
           <div className="card-title">
             <h2>
-              Baltimore Raven vs Los Angeles Rams
+              Baltimore Ravens vs Los Angeles Rams
               <small>Moneyline Favorite</small>
             </h2>
             <div className="task-count">$100</div>
