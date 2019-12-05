@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SelectedBet from './SelectedBet';
 import superb from 'superb';
 import './SelectedBets.module.css';
+import './BetSlips.module.css';
 
 export default function SelectedBets() {
   const startingteams = [];

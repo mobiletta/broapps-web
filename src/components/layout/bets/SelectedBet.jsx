@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AnimatedVisibility from '../../views/BetSlip/AnimatedVisibility';
 import './SelectedBets.module.css';
+import './BetSlips.module.css';
 
 export default function SelectedBet({ team }) {
   const [visible] = useState(true);
@@ -13,16 +14,14 @@ export default function SelectedBet({ team }) {
 
   return (
     <AnimatedVisibility visible={visible} animationIn="zoomIn" animationOut="zoomOut">
-      <div className={`row dashboard-cards ${condition ? ' showing' : ''}`} onClick={handleClick}>
+      <div className={`row dashboard-cards${condition ? ' showing' : ''}`} onClick={handleClick}>
         <div className="card col-md-4">
           <div className="card-title">
-            <h2>
-              Baltimore Ravens vs Los Angeles Rams
-              <small>Moneyline Favorite</small>
-            </h2>
+            <h2>Baltimore Ravens vs Los Angeles Rams </h2>
+            <small>Moneyline Favorite</small>
             <div className="task-count">$100</div>
           </div>
-          <div className={`card-flap flap1 ${condition ? ' d-card-show' : ''}`} onClick={handleClick}>
+          <div className={`card-flap flap1${condition ? ' d-card-show' : ''}`} onClick={handleClick}>
             <div className="card-description">
               <ul className="task-list">
                 <li>

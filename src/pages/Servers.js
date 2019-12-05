@@ -5,6 +5,7 @@ import { Box } from 'grommet';
 import './Servers.module.scss';
 import interact from 'interactjs';
 import { SelectedBet } from '../components/layout/bets';
+//import Boxes from '../components/views/BetSlip/Boxes';
 //import GoldenLayout, { Row, Stack, createGoldenLayoutComponent } from 'react-golden-layout';
 //import { Foo, Bar } from '../components/views';
 
@@ -27,34 +28,34 @@ interact('.window').draggable({
 export const Servers = () => (
   <Box fill align="center" justify="center">
     <div id="bod">
-      <div class="window active-window" id="win">
-        <div class="winbg">
+      <div className="window active-window" id="win">
+        <div className="winbg">
           <h1>Odds Board</h1>
         </div>
-        <div class="blur-shadow"></div>
+        <div className="blur-shadow"></div>
       </div>
 
-      <div class="window odds">
-        <div class="winbg">
+      <div className="window odds">
+        <div className="winbg">
           <h1>Game Countdown</h1>
         </div>
-        <div class="blur-shadow"></div>
+        <div className="blur-shadow"></div>
       </div>
 
-      <div class="window special-case">
-        <div class="winbg">
+      <div className="window special-case">
+        <div className="winbg">
           <h1>Bets</h1>
         </div>
-        <div class="blur-shadow"></div>
+        <div className="blur-shadow"></div>
       </div>
 
       <SelectedBet />
 
-      <div class="window room">
-        <div class="winbg">
+      <div className="window room">
+        <div className="winbg">
           <h1>Room</h1>
         </div>
-        <div class="blur-shadow"></div>
+        <div className="blur-shadow"></div>
       </div>
     </div>
   </Box>

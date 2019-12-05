@@ -11,7 +11,7 @@ const SignedInLinks = props => {
           <NavLink to="/odds">Odds</NavLink>
         </li>
         <li>
-          <NavLink to="/create">My Bets</NavLink>
+          <NavLink to="/dashboard">My Bets</NavLink>
         </li>
         <li>
           <NavLink to="/create">My Rooms</NavLink>
@@ -25,7 +25,7 @@ const SignedInLinks = props => {
           </a>
         </li>
         <li>
-          <NavLink to="/" className="btn btn-floating pink lighten-1">
+          <NavLink to="/" className="btn btn-floating blue lighten-1">
             {props.profile.initials}
           </NavLink>
         </li>

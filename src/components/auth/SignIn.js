@@ -55,7 +55,7 @@ class SignIn extends Component {
               </div>
               <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
               <div className="inputBox">
-                <button className="btn pink lighten-1 z-depth-0">Login</button>
+                <button className="btn blue lighten-1 z-depth-0">Login</button>
                 <div className="center red-text">{authError ? <p>{authError}</p> : null}</div>
               </div>
             </form>

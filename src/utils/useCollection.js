@@ -2,8 +2,8 @@ import _ from 'lodash';
 import { map, filter } from 'lodash/fp';
 import { useEffect } from 'react';
 //import { FireSQL } from 'firesql';
-//import firebase from 'firebase/app';
-//import 'firebase/firestore';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 //import { Query } from 'firebase/firestore';
 
 export const useCollection = (query, handlers, deps) => {
