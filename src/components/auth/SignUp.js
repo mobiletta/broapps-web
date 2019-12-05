@@ -31,7 +31,7 @@ class SignUp extends Component {
     if (auth.uid) return <Redirect to="/dashboard" />;
     return (
       <div className="container">
-        <div className="background-video">
+        <div className={boxStyles.backgroundvideo}>
           <VideoBg poster={poster}>
             <VideoBg.Source src={webm} type="video/webm" />
             <VideoBg.Source src={mp4} type="video/mp4" />
@@ -40,23 +40,23 @@ class SignUp extends Component {
         <div className={boxStyles.transparentbox}>
           <h2>Sign Up</h2>
           <form onSubmit={this.handleSubmit}>
-            <div className="inputBox">
+            <div className={boxStyles.inputBox}>
               <label htmlFor="email">Email</label>
               <input type="email" id="email" onChange={this.handleChange} />
             </div>
-            <div className="inputBox">
+            <div className={boxStyles.inputBox}>
               <label htmlFor="password">Password</label>
               <input type="password" id="password" onChange={this.handleChange} />
             </div>
-            <div className="inputBox">
+            <div className={boxStyles.inputBox}>
               <label htmlFor="firstName">First Name</label>
               <input type="text" id="firstName" onChange={this.handleChange} />
             </div>
-            <div className="inputBox">
+            <div className={boxStyles.inputBox}>
               <label htmlFor="lastName">Last Name</label>
               <input type="text" id="lastName" onChange={this.handleChange} />
             </div>
-            <div className="inputBox">
+            <div className={boxStyles.inputBox}>
               <button className="btn blue lighten-1 z-depth-0">Sign Up</button>
               <div className="center red-text">{authError ? <p>{authError}</p> : null}</div>
             </div>
