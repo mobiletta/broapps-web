@@ -2,9 +2,9 @@ import React from 'react';
 import { Box } from 'grommet';
 //import 'golden-layout/src/css/goldenlayout-base.css';
 //import 'golden-layout/src/css/goldenlayout-translucent-theme.css';
-import './Servers.module.scss';
+import styles from './Servers.module.scss';
 import interact from 'interactjs';
-import { SelectedBet } from '../components/layout/bets';
+//import { SelectedBet } from '../components/layout/bets';
 //import Boxes from '../components/views/BetSlip/Boxes';
 //import GoldenLayout, { Row, Stack, createGoldenLayoutComponent } from 'react-golden-layout';
 //import { Foo, Bar } from '../components/views';
@@ -27,35 +27,33 @@ interact('.window').draggable({
 
 export const Servers = () => (
   <Box fill align="center" justify="center">
-    <div id="bod">
-      <div className="window active-window" id="win">
-        <div className="winbg">
+    <div className={styles.bod}>
+      <div className={`${styles.window} ${styles.activewindow}`} id="win">
+        <div className={styles.winbg}>
           <h1>Odds Board</h1>
         </div>
-        <div className="blur-shadow"></div>
+        <div className={styles.blurshadow}></div>
       </div>
 
-      <div className="window odds">
-        <div className="winbg">
+      <div className={`${styles.window} ${styles.odds}`}>
+        <div className={styles.winbg}>
           <h1>Game Countdown</h1>
         </div>
-        <div className="blur-shadow"></div>
+        <div className={styles.blurshadow}></div>
       </div>
 
-      <div className="window special-case">
-        <div className="winbg">
+      <div className={`${styles.window} ${styles.specialcase}`}>
+        <div className={styles.winbg}>
           <h1>Bets</h1>
         </div>
-        <div className="blur-shadow"></div>
+        <div className={styles.blurshadow}></div>
       </div>
 
-      <SelectedBet />
-
-      <div className="window room">
-        <div className="winbg">
+      <div className={`${styles.window} ${styles.room}`}>
+        <div className={styles.winbg}>
           <h1>Room</h1>
         </div>
-        <div className="blur-shadow"></div>
+        <div className={styles.blurshadow}></div>
       </div>
     </div>
   </Box>
