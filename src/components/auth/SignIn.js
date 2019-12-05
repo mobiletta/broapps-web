@@ -13,8 +13,8 @@ import app from 'firebase/app';
 import 'firebase/auth';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
-import './Login.module.css';
-import './InputBox.module.css';
+import './SignIn.module.css';
+import boxStyles from './TransparentBox.module.css';
 
 class SignIn extends Component {
   state = {
@@ -41,7 +41,7 @@ class SignIn extends Component {
             <VideoBg.Source src={mp4} type="video/mp4" />
           </VideoBg>
         </div>
-        <div className="box">
+        <div className={boxStyles.transparentbox}>
           <h2>Sign In</h2>
           <div className="form">
             <form onSubmit={this.handleSubmit}>

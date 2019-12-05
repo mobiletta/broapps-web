@@ -1,4 +1,4 @@
-.box {
+.transparentbox {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -10,25 +10,25 @@
   border-radius: 0.625rem;
 }
 
-.box h2 {
+.transparentbox h2 {
   margin: 0 0 1.875rem;
   padding: 0;
   color: #fff;
   text-align: center;
 }
 
-.box h3 {
+.transparentbox h3 {
   margin: 0 0 1.875rem;
   padding: 0;
   color: #fff;
   text-align: center;
 }
 
-.box .inputBox {
+.transparentbox .inputBox {
   position: relative;
 }
 
-.box .inputBox input {
+.transparentbox .inputBox input {
   width: 100%;
   padding: 0.625rem 0;
   font-size: 1rem;
@@ -42,7 +42,7 @@
   background: transparent;
 }
 
-.box .inputBox label {
+.transparentbox .inputBox label {
   position: absolute;
   top: 0;
   left: 0;
@@ -54,20 +54,20 @@
   transition: 0.5s;
 }
 
-.box p {
+.transparentbox p {
   color: #ffffff;
 }
 
-.box .inputBox input:focus ~ label,
-.box .inputBox input:valid ~ label,
-.box .inputBox input:not([value='']) ~ label {
+.transparentbox .inputBox input:focus ~ label,
+.transparentbox .inputBox input:valid ~ label,
+.transparentbox .inputBox input:not([value='']) ~ label {
   top: -1.125rem;
   left: 0;
   color: #03a9f4;
   font-size: 1.25rem;
 }
 
-.box input[type='submit'] {
+.transparentbox input[type='submit'] {
   border: none;
   outline: none;
   color: #fff;
@@ -78,7 +78,7 @@
   font-size: 2rem;
 }
 
-.box input[type='submit']:hover {
+.transparentbox input[type='submit']:hover {
   background-color: #1cb1f5;
 }
 

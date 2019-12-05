@@ -7,8 +7,8 @@ import webm from '../../media/Vegas.webm';
 import mp4 from '../../media/Vegas.mp4';
 import poster from '../../media/Vegas_First_Frame.png';
 
-import './Login.module.css';
-import './InputBox.module.css';
+import './SignIn.module.css';
+import boxStyles from './TransparentBox.module.css';
 
 class SignUp extends Component {
   state = {
@@ -37,7 +37,7 @@ class SignUp extends Component {
             <VideoBg.Source src={mp4} type="video/mp4" />
           </VideoBg>
         </div>
-        <div className="box">
+        <div className={boxStyles.transparentbox}>
           <h2>Sign Up</h2>
           <form onSubmit={this.handleSubmit}>
             <div className="inputBox">
