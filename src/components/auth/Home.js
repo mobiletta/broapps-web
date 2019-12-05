@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { signIn } from '../../store/actions/authActions';
 import VideoBg from 'reactjs-videobg';
-//import webm from '../../media/Vegas.webm';
-//import mp4 from '../../media/Vegas.mp4';
-//import poster from '../../media/Vegas_First_Frame.png';
+import webm from '../../media/Vegas.webm';
+import mp4 from '../../media/Vegas.mp4';
+import poster from '../../media/Vegas_First_Frame.png';
 //import { GoogleLoginButton, InstagramLoginButton } from "react-social-login-buttons";
 import 'firebase/auth';
+
+//https://bro-media.s3.amazonaws.com/images/aeriallv-poster.png
+//https://bro-media.s3.amazonaws.com/static-video/media.io_media.io_4k-aerial-of-las-vegas-strip-at-night_bnmzkfl2__D.webm
+//https://bro-media.s3.amazonaws.com/static-video/media.io_4k-aerial-of-las-vegas-strip-at-night_bnmzkfl2__D.mp4
 
 class Home extends Component {
   state = {
@@ -26,9 +30,9 @@ class Home extends Component {
     return (
       <div className="container">
         <div className="background-video">
-          <VideoBg poster="https://bro-media.s3.amazonaws.com/images/aeriallv-poster.png">
-            <VideoBg.Source src="https://bro-media.s3.amazonaws.com/static-video/media.io_media.io_4k-aerial-of-las-vegas-strip-at-night_bnmzkfl2__D.webm" type="video/webm" />
-            <VideoBg.Source src="https://bro-media.s3.amazonaws.com/static-video/media.io_4k-aerial-of-las-vegas-strip-at-night_bnmzkfl2__D.mp4" type="video/mp4" />
+          <VideoBg poster={poster}>
+            <VideoBg.Source src={webm} type="video/webm" />
+            <VideoBg.Source src={mp4} type="video/mp4" />
           </VideoBg>
         </div>
       </div>

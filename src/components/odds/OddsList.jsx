@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { getPointSpreads } from '../../store/actions/odds';
 import { withPolling } from './withPolling';
 import Moment from 'react-moment';
+import '../layout/bets/SelectedBets.module.css';
 
 class OddsList extends Component {
   render() {
@@ -12,19 +13,24 @@ class OddsList extends Component {
     if (Array.isArray(data) && data.length > 0) {
       return (
         <div>
-          <h4>Odds</h4>
           {data.map((odd, index) => {
             return (
-              <div key={index}>
-                <hr />
-                <h4>
-                  <Link to={`/odds/${index}`}>
-                    {index}: {`${odd.teams[0]} vs. ${odd.teams[1]}`}
-                  </Link>
-                </h4>
-                <Moment unix>{odd.commence_time}</Moment>
-                <p>{`${odd.sites[0].odds.spreads.odds[0]} ${odd.sites[0].odds.spreads.odds[1]}`}</p>
-                <p>{`${odd.sites[0].odds.spreads.points[0]} ${odd.sites[0].odds.spreads.points[1]}`}</p>
+              <div className="row dashboard-cards">
+                <div className="card col-md-4">
+                  <div className="card-title">
+                    <div key={index}>
+                      <hr />
+                      <h4>
+                        <Link to={`/odds/${index}`}>
+                          {index}: {`${odd.teams[0]} vs. ${odd.teams[1]}`}
+                        </Link>
+                      </h4>
+                      <Moment unix>{odd.commence_time}</Moment>
+                      <p>{`${odd.sites[0].odds.spreads.odds[0]} ${odd.sites[0].odds.spreads.odds[1]}`}</p>
+                      <p>{`${odd.sites[0].odds.spreads.points[0]} ${odd.sites[0].odds.spreads.points[1]}`}</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             );
           })}
