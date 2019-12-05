@@ -1,76 +1,78 @@
-
-$bg: "https://bro-media.s3.amazonaws.com/images/backgrounds/AdobeStock_129466817.jpeg";
+$bg: 'https://bro-media.s3.amazonaws.com/images/backgrounds/AdobeStock_129466817.jpeg';
 
 .bod {
-	height: 100vh;
-	width: 96vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-	background-image: url($bg);
-	background-size: cover;
-	}
+  height: 100vh;
+  width: 96vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url($bg);
+  background-size: cover;
+}
 
 .window {
-	position: relative;
-	z-index: 2;
-	padding: 10px;
-	cursor: move;
-	}
+  position: relative;
+  z-index: 2;
+  padding: 10px;
+  cursor: move;
+}
 .winbg {
-	padding: 30px;
-	border-radius: 10px;
-	background-color: hsla(219,88,45,.1);
-	border: 1px solid;
-	}
+  padding: 30px;
+  border-radius: 10px;
+  background-color: hsla(219, 88, 45, 0.1);
+  border: 1px solid;
+}
 
 .blurshadow {
-	position: absolute;
-	top: 0px; left: 0px; 
-	bottom: 0px; right: 0px;
-	background-attachment: fixed;
-	filter: brightness(.9) blur(5px);
-	z-index: -1;
-	pointer-events: none;
-	}
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-attachment: fixed;
+  filter: brightness(0.9) blur(5px);
+  z-index: -1;
+  pointer-events: none;
+}
 
 .activewindow {
-	z-index: 999;
-	
-	.blurshadow {
-		top: -20px; left: -20px; 
-		bottom: -20px; right: -20px;
-		}
-	}
+  z-index: 999;
+
+  .blurshadow {
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+  }
+}
 
 h1 {
-	margin-bottom: 30px;
-	}
+  margin-bottom: 30px;
+}
 
 p {
-	margin-bottom: 15px;
-	}
+  margin-bottom: 15px;
+}
 
 a {
-	color: inherit;
-	}
-
+  color: inherit;
+}
 
 .specialcase .winbg {
-	background-color: hsla(0,100,50,.2);
-	color: white;
-	
-	h1 {
-		color: yellow;
-		}	
-	}
+  background-color: hsla(0, 100, 50, 0.2);
+  color: white;
+
+  h1 {
+    color: yellow;
+  }
+}
 
 .room .winbg {
-	background-color: hsla(86,57,30,.4);
-	color: white;
-	
-	h1 {
-		color: white;
-		}	
-	}
+  background-color: hsla(86, 57, 30, 0.4);
+  color: white;
+
+  h1 {
+    color: white;
+  }
+}
