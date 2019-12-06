@@ -89,7 +89,12 @@ DepartureBoard.Letter = function() {
   this._fallingText = document.createElement('span');
   this._fallingText.className = 'text';
 
-  this._fallingText.style.WebkitTransitionDuration = this._fallingText.style.MozTransitionDuration = this._fallingText.style.OTransitionDuration = this._fallingText.style.transitionDuration = DepartureBoard.Letter.DROP_TIME * 0.5 + 'ms';
+  let duration = DepartureBoard.Letter.DROP_TIME * 0.5 + 'ms';
+
+  this._fallingText.style.WebkitTransitionDuration = duration;
+  this._fallingText.style.MozTransitionDuration = duration;
+  this._fallingText.style.OTransitionDuration = duration;
+  this._fallingText.style.transitionDuration = duration;
 
   this._falling.appendChild(this._fallingText);
 
@@ -136,8 +141,18 @@ DepartureBoard.Letter.prototype._tick = function() {
   this._topText.innerHTML = newValue;
 
   window.setTimeout(function() {
-    fallingTextStyle.WebkitTransitionTimingFunction = fallingTextStyle.MozTransitionTimingFunction = fallingTextStyle.OTransitionTimingFunction = fallingTextStyle.transitionTimingFunction = 'ease-in';
-    fallingTextStyle.WebkitTransform = fallingTextStyle.MozTransform = fallingTextStyle.OTransform = fallingTextStyle.transform = 'scaleY(0)';
+    const transitionIn = 'ease-in';
+    const transformIn = 'scaleY(0)';
+
+    fallingTextStyle.WebkitTransitionTimingFunction = transitionIn;
+    fallingTextStyle.MozTransitionTimingFunction = transitionIn;
+    fallingTextStyle.OTransitionTimingFunction = transitionIn;
+    fallingTextStyle.transitionTimingFunction = transitionIn;
+
+    fallingTextStyle.WebkitTransform = transformIn;
+    fallingTextStyle.MozTransform = transformIn;
+    fallingTextStyle.OTransform = transformIn;
+    fallingTextStyle.transform = transformIn;
   }, 1);
 
   window.setTimeout(function() {
@@ -147,8 +162,18 @@ DepartureBoard.Letter.prototype._tick = function() {
     fallingStyle.bottom = 'auto';
     fallingTextStyle.top = '-.65em';
 
-    fallingTextStyle.WebkitTransitionTimingFunction = fallingTextStyle.MozTransitionTimingFunction = fallingTextStyle.OTransitionTimingFunction = fallingTextStyle.transitionTimingFunction = 'ease-out';
-    fallingTextStyle.WebkitTransform = fallingTextStyle.MozTransform = fallingTextStyle.OTransform = fallingTextStyle.transform = 'scaleY(1)';
+    const transitionOut = 'ease-out';
+    const transformOut = 'scaleY(1)';
+
+    fallingTextStyle.WebkitTransitionTimingFunction = transitionOut;
+    fallingTextStyle.MozTransitionTimingFunction = transitionOut;
+    fallingTextStyle.OTransitionTimingFunction = transitionOut;
+    fallingTextStyle.transitionTimingFunction = transitionOut;
+
+    fallingTextStyle.WebkitTransform = transformOut;
+    fallingTextStyle.MozTransform = transformOut;
+    fallingTextStyle.OTransform = transformOut;
+    fallingTextStyle.transform = transformOut;
   }, DepartureBoard.Letter.DROP_TIME / 2);
 
   window.setTimeout(function() {

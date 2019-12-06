@@ -35,18 +35,17 @@ function getOddsPointSpread() {
   return axios.get(`${apiUrl}spreads`);
 }
 
-function getOddsMoneyline() {
-  return axios.get(`${apiUrl}h2h`);
-}
+// function getOddsMoneyline() {
+//   return axios.get(`${apiUrl}h2h`);
+// }
 
-function getOddsTotals() {
-  return axios.get(`${apiUrl}totals`);
-}
+// function getOddsTotals() {
+//   return axios.get(`${apiUrl}totals`);
+// }
 
 export const getPointSpreads = () => {
   return dispatch => {
-    return axios
-      .all([getOddsPointSpread(), getOddsMoneyline(), getOddsTotals()])
+    return getOddsPointSpread()
       .then(
         axios.spread(function(spreads, moneylines, totals) {
           console.log(spreads);

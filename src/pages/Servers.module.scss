@@ -6,7 +6,7 @@ $bg: 'https://bro-media.s3.amazonaws.com/images/backgrounds/AdobeStock_88993970_
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: white;
   background-image: url($bg);
   background-size: cover;
 }
