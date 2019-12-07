@@ -9,8 +9,8 @@ import interact from 'interactjs';
 //import GoldenLayout, { Row, Stack, createGoldenLayoutComponent } from 'react-golden-layout';
 //import { Foo, Bar } from '../components/views';
 
-import oddsdone from '../media/oddsboard-done.png';
-import selectedbets from '../media/selected-bets.png';
+// import oddsdone from '../media/oddsboard-done.png';
+// import selectedbets from '../media/selected-bets.png';
 
 const position = { x: 0, y: 0 };
 
@@ -33,16 +33,16 @@ export const Servers = () => (
     <div className={styles.bod}>
       <div className="window activewindow" id="win">
         <div className={styles.winbg}>
-          {/* <h1>Odds Board</h1> */}
-          <Image fit="cover" src={oddsdone} />
+          <h1>Odds Board</h1>
+          {/* <Image fit="cover" src={oddsdone} /> */}
         </div>
         <div className={styles.blurshadow}></div>
       </div>
 
       <div className="window room">
         <div className={styles.winbg}>
-          {/* <h1>Bets</h1> */}
-          <Image fit="cover" src={selectedbets} />
+          <h1>Bets</h1>
+          {/* <Image fit="cover" src={selectedbets} /> */}
         </div>
         <div className={styles.blurshadow}></div>
       </div>
