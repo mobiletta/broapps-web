@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Image } from 'grommet';
+import { Box } from 'grommet';
 //import 'golden-layout/src/css/goldenlayout-base.css';
 //import 'golden-layout/src/css/goldenlayout-translucent-theme.css';
 import styles from './Servers.module.scss';

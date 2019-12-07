@@ -2,6 +2,7 @@
   "name": "broapps-web",
   "version": "0.1.0",
   "private": true,
+  "color": true,
   "dependencies": {
     "@babel/runtime-corejs3": "^7.7.4",
     "@sentry/browser": "^5.9.0",
@@ -22,6 +23,7 @@
     "history": "^4.10.1",
     "immutable": "^4.0.0-rc.12",
     "interactjs": "^1.7.2",
+    "jshint": "^2.10.3",
     "moment": "^2.24.0",
     "node-notifier": "^6.0.0",
     "node-sass": "^4.13.0",
@@ -76,7 +78,8 @@
     "fix-code": "prettier-eslint --write 'src/**/*.{js,jsx,json}'",
     "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss,sass}'",
     "lint": "eslint src/**/*.{js,jsx}",
-    "lint:fix": "eslint --fix src/**/*.{js,jsx}"
+    "lint:fix": "eslint --fix src/**/*.{js,jsx}",
+    "refreshVSToken": "vsts-npm-auth -config .npmrc"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
