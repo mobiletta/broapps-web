@@ -34,7 +34,6 @@ export const Servers = () => (
       <div className="window activewindow" id="win">
         <div className={styles.winbg}>
           <h1>Odds Board</h1>
-          {/* <Image fit="cover" src={oddsdone} /> */}
         </div>
         <div className={styles.blurshadow}></div>
       </div>
@@ -42,7 +41,6 @@ export const Servers = () => (
       <div className="window room">
         <div className={styles.winbg}>
           <h1>Bets</h1>
-          {/* <Image fit="cover" src={selectedbets} /> */}
         </div>
         <div className={styles.blurshadow}></div>
       </div>
