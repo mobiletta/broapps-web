@@ -6,7 +6,7 @@ export default class TrailerPlayer extends Component {
     super(props, context);
 
     this.state = {
-      playerSource: 'https://bro-media.s3.amazonaws.com/static-video/01236225d7b06eb8b6f6153df973ba5f.mp4',
+      playerSource: 'https://bro-media.s3.amazonaws.com/static-video/ALL+IN+SUPER+TRAILER.mp4',
     };
   }
 

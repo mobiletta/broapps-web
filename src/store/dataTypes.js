@@ -1,0 +1,13 @@
+export const USERS = 'users';
+export const MESSAGES = 'messages';
+export const NOTIFICATIONS = 'notifications';
+export const SPORTS = 'sports';
+export const GAMES = 'games';
+export const TEAMS = 'teams';
+export const ODDTYPES = 'oddtypes';
+export const ODDS = 'odds';
+export const BETTYPES = 'bettypes';
+export const BETS = 'bets';
+export const BANKROLLS = 'bankrolls';
+export const CAMPAIGNS = 'campaigns';
+export const PROMOS = 'promos';

@@ -48,9 +48,9 @@ export const getPointSpreads = () => {
     return getOddsPointSpread()
       .then(
         axios.spread(function(spreads, moneylines, totals) {
-          console.log(spreads);
-          console.log(moneylines);
-          console.log(totals);
+          //console.log(spreads);
+          //console.log(moneylines);
+          // console.log(totals);
           //let vehicles = seat.data.concat(volkswagen.data);
           //let oddsData = merge(spreads.data, moneylines.data, totals.data);
           let oddsData = spreads.data;
