@@ -8,7 +8,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import registerServiceWorker from './registerServiceWorker';
 import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
-import { store, firestoreProps } from './store/createReduxStore';
+import { store, firestoreProps } from '@/store/createReduxStore';
 import Root from './Root';
 
 ReactDOM.render(

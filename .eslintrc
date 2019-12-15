@@ -7,14 +7,15 @@
   },
   "settings": {
     "import/resolver": {
+      "alias": {
+        "map": [["@", "./src"]]
+      },
       "node": {
         "moduleDirectory": ["node_modules", "src/"]
       }
     }
   },
-  "plugins": [
-    "react-hooks"
-  ],
+  "plugins": ["react-hooks"],
   "rules": {
     "strict": 0,
     "max-len": ["error", { "code": 250 }],

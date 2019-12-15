@@ -82,7 +82,7 @@ class App extends Component {
           <Grommet theme={mediaBackgroundTheme} full>
             <Navbar />
             <Box direction="row" fill>
-              <Sidebar appIcon={<GrommetIcon color="brand" />} appName="Bro Leans" items={items} userSession={userSession} />
+              <Sidebar appIcon={<GrommetIcon color="brand" />} appName="Home" items={items} userSession={userSession} />
               <Box flex>
                 <Switch>
                   <Route path="/" exact component={Home} />

@@ -20,7 +20,7 @@ const SignedInLinks = props => {
           <NavLink to="/create">Players Online</NavLink>
         </li>
         <li>
-          <a href="/home" onClick={props.signOut}>
+          <a href="/" onClick={props.signOut}>
             Log Out
           </a>
         </li>
