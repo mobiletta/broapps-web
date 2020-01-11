@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { getPointSpreads } from '../../store/actions/odds';
+import { getOdds } from '../../store/actions/odds';
 import { withPolling } from './withPolling';
 import Moment from 'react-moment';
 import '../layout/bets/SelectedBets.module.css';
@@ -46,4 +46,4 @@ const mapStateToProps = state => ({ odds: state.odds });
 
 const mapDispatchToProps = {};
 
-export default withPolling(getPointSpreads)(connect(mapStateToProps, mapDispatchToProps)(OddsList));
+export default withPolling(getOdds)(connect(mapStateToProps, mapDispatchToProps)(OddsList));

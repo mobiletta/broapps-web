@@ -1,4 +1,5 @@
 import axios from 'axios';
+import * as jsonpatch from 'fast-json-patch';
 
 export const FETCH_ODDS = 'FETCH_ODDS';
 export const FETCH_DATA_REJECTED = 'FETCH_DATA_REJECTED';
@@ -35,25 +36,58 @@ function getOddsPointSpread() {
   return axios.get(`${apiUrl}spreads`);
 }
 
-// function getOddsMoneyline() {
-//   return axios.get(`${apiUrl}h2h`);
-// }
+function getOddsMoneyline() {
+  return axios.get(`${apiUrl}h2h`);
+}
 
-// function getOddsTotals() {
-//   return axios.get(`${apiUrl}totals`);
-// }
+function getOddsTotals() {
+  return axios.get(`${apiUrl}totals`);
+}
 
-export const getPointSpreads = () => {
+export const getOdds = () => {
   return dispatch => {
-    return getOddsPointSpread()
+    return axios
+      .all([getOddsPointSpread(), getOddsMoneyline(), getOddsTotals()])
       .then(
-        axios.spread(function(spreads, moneylines, totals) {
-          //console.log(spreads);
-          //console.log(moneylines);
-          // console.log(totals);
-          //let vehicles = seat.data.concat(volkswagen.data);
-          //let oddsData = merge(spreads.data, moneylines.data, totals.data);
-          let oddsData = spreads.data;
+        axios.spread((spreads, moneylines, totals) => {
+          let patch = jsonpatch.compare(spreads.data, moneylines.data);
+          console.log('Patch1: ');
+          console.log(patch);
+          let errors = jsonpatch.validate(patch, spreads.data);
+          let updatedDocument = {};
+          if (errors.length === 0) {
+            updatedDocument = patch.reduce(applyReducer, spreads.data);
+          } else {
+            for (var i = 0; i < errors.length; i++) {
+              if (!errors[i]) {
+                console.log('Valid patch at index', i, patch[i]);
+              } else {
+                console.error('Invalid patch at index', i, errors[i], patch[i]);
+              }
+            }
+          }
+          console.log('Updated Document: ');
+          console.log(updatedDocument);
+          patch = jsonpatch.compare(updatedDocument, totals.data);
+          console.log('Patch2: ');
+          console.log(patch);
+          errors = jsonpatch.validate(patch, updatedDocument);
+          let finalDocument = {};
+          if (errors.length === 0) {
+            finalDocument = patch.reduce(applyReducer, updatedDocument);
+          } else {
+            for (var i = 0; i < errors.length; i++) {
+              if (!errors[i]) {
+                console.log('Valid patch at index', i, patch[i]);
+              } else {
+                console.error('Invalid patch at index', i, errors[i], patch[i]);
+              }
+            }
+          }
+          console.log('Final Document: ');
+          console.log(finalDocument);
+
+          let oddsData = finalDocument;
           console.log(oddsData);
           dispatch(receiveOdds(oddsData));
         }),

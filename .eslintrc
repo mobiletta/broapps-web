@@ -18,6 +18,7 @@
   "plugins": ["react-hooks"],
   "rules": {
     "strict": 0,
+    
     "max-len": ["error", { "code": 250 }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
