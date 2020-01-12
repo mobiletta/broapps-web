@@ -2,6 +2,10 @@
   "name": "broapps-web",
   "version": "0.1.0",
   "private": true,
+  "color": true,
+  "engines": {
+    "node": "0.10.x"
+  },
   "dependencies": {
     "cross-env": "^6.0.3",
     "firebase": "^7.4.0",
