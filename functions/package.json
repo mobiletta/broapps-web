@@ -20,5 +20,6 @@
     "eslint": "^6.6.0",
     "eslint-plugin-promise": "^4.2.1"
   },
-  "private": true
+  "private": true,
+  "version": "0.1.0"
 }

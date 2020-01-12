@@ -8,6 +8,7 @@
     "copyVersion": "true",
     "createConfig": {
       "master": {
+        "version": "${npm_package_version}",
         "env": "production",
         "firebase" : {
           "apiKey": "AIzaSyBCQPjVM0rtS3558vTSN_w7FHsAR2ER4Bs",
