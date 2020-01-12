@@ -1,10 +1,28 @@
 {
   "projects": {
+    "default": "broapps-prod",
+    "production": "broapps-prod",
     "dev": "broapps-dev"
   },
   "ci": {
     "copyVersion": "true",
     "createConfig": {
+      "master": {
+        "env": "production",
+        "firebase" : {
+          apiKey: "AIzaSyBCQPjVM0rtS3558vTSN_w7FHsAR2ER4Bs",
+          authDomain: "broapps-prod.firebaseapp.com",
+          databaseURL: "https://broapps-prod.firebaseio.com",
+          projectId: "broapps-prod",
+          storageBucket: "broapps-prod.appspot.com",
+          messagingSenderId: "285031108431",
+          appId: "1:285031108431:web:1ec47f993b4a1d1f51ff3a",
+          measurementId: "G-BM6449LPPP"
+        },
+        "sentryDsn": "https://14b8744f9d5548739a4f02be1a096fbc@sentry.io/1824492",
+        "analyticsTrackingId": "215778811",
+        "publicVapidKey": "BLDQNBMFAfJF0OSf_AchOrV1r079bgLfU2OxJ2U_O9pYg2cGL8V4EATnIXo1sBfNJxv4cvUAC8gsFrCZFKuz178"
+      },
       "dev": {
         "version": "${npm_package_version}",
         "env": "development",
@@ -19,7 +37,7 @@
           "measurementId": "G-YHTMFSE4Q9"
         },
         "sentryDsn": "https://14b8744f9d5548739a4f02be1a096fbc@sentry.io/1824492",
-        "analyticsTrackingId": "211483119",
+        "analyticsTrackingId": "215753994",
         "publicVapidKey": "BMdW_ieu-SwjNKoNVQncYe1p6hP-PlK2q5lrnrokmyUWMx3-5yszFDsB03U2djP5bL0NYHRR3kCXKdMV-2qcOtI"
       }
   }
