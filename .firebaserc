@@ -10,14 +10,14 @@
       "master": {
         "env": "production",
         "firebase" : {
-          apiKey: "AIzaSyBCQPjVM0rtS3558vTSN_w7FHsAR2ER4Bs",
-          authDomain: "broapps-prod.firebaseapp.com",
-          databaseURL: "https://broapps-prod.firebaseio.com",
-          projectId: "broapps-prod",
-          storageBucket: "broapps-prod.appspot.com",
-          messagingSenderId: "285031108431",
-          appId: "1:285031108431:web:1ec47f993b4a1d1f51ff3a",
-          measurementId: "G-BM6449LPPP"
+          "apiKey": "AIzaSyBCQPjVM0rtS3558vTSN_w7FHsAR2ER4Bs",
+          "authDomain": "broapps-prod.firebaseapp.com",
+          "databaseURL": "https://broapps-prod.firebaseio.com",
+          "projectId": "broapps-prod",
+          "storageBucket": "broapps-prod.appspot.com",
+          "messagingSenderId": "285031108431",
+          "appId": "1:285031108431:web:1ec47f993b4a1d1f51ff3a",
+          "measurementId": "G-BM6449LPPP"
         },
         "sentryDsn": "https://14b8744f9d5548739a4f02be1a096fbc@sentry.io/1824492",
         "analyticsTrackingId": "215778811",
