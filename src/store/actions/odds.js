@@ -56,7 +56,7 @@ export const getOdds = () => {
           let errors = jsonpatch.validate(patch, spreads.data);
           let updatedDocument = {};
           if (errors.length === 0) {
-            updatedDocument = patch.reduce(applyReducer, spreads.data);
+            updatedDocument = patch.reduce(jsonpatch.applyReducer, spreads.data);
           } else {
             for (var i = 0; i < errors.length; i++) {
               if (!errors[i]) {
@@ -74,7 +74,7 @@ export const getOdds = () => {
           errors = jsonpatch.validate(patch, updatedDocument);
           let finalDocument = {};
           if (errors.length === 0) {
-            finalDocument = patch.reduce(applyReducer, updatedDocument);
+            finalDocument = patch.reduce(jsonpatch.applyReducer, updatedDocument);
           } else {
             for (var i = 0; i < errors.length; i++) {
               if (!errors[i]) {

@@ -1028,6 +1028,22 @@
   resolved "https://registry.yarnpkg.com/@firebase/analytics-types/-/analytics-types-0.2.3.tgz#a160bf439cfefd74b22913e6e47d4377fb9c3372"
   integrity sha512-8R8V5ZZsg6lDe2EiqgNq3XMQpAHbfStoXqRjdxu7FVCNLb/yxBThANdFXHbh4XxDc7vJEZr90PAjRB+bfGkSyw==
 
+"@firebase/analytics-types@0.2.5":
+  version "0.2.5"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/analytics-types/-/analytics-types-0.2.5.tgz#18f4400482a445504b69d6b64c7d98f11fd3ea5e"
+  integrity sha1-GPRABIKkRVBLada2TH2Y8R/T6l4=
+
+"@firebase/analytics@0.2.10":
+  version "0.2.10"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/analytics/-/analytics-0.2.10.tgz#a30ef507382c2228b57e6e9f3124da27783a850d"
+  integrity sha1-ow71BzgsIii1fm6fMSTaJ3g6hQ0=
+  dependencies:
+    "@firebase/analytics-types" "0.2.5"
+    "@firebase/component" "0.1.2"
+    "@firebase/installations" "0.3.9"
+    "@firebase/util" "0.2.37"
+    tslib "1.10.0"
+
 "@firebase/analytics@0.2.7":
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/@firebase/analytics/-/analytics-0.2.7.tgz#8f64acc4c155ab601976856f8fe6d1f568c03e39"
@@ -1043,6 +1059,11 @@
   resolved "https://registry.yarnpkg.com/@firebase/app-types/-/app-types-0.4.8.tgz#be69cbf3a7550c900d7af943adb2a3d1dcce6631"
   integrity sha512-VTjWRooelMExK/rKArp6WqnWJJfi8Vs6VuDYDSeMcQ3NpSux2bW1dfJFuzYmiK1+37hEJP1F43DyUDv2lCJquw==
 
+"@firebase/app-types@0.5.0":
+  version "0.5.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/app-types/-/app-types-0.5.0.tgz#b9b51a37956ec166debc8784a2fb30b5ffc9e921"
+  integrity sha1-ubUaN5VuwWbevIeEovswtf/J6SE=
+
 "@firebase/app@0.4.25":
   version "0.4.25"
   resolved "https://registry.yarnpkg.com/@firebase/app/-/app-0.4.25.tgz#b55a3e6516d3fba2a4e4198bb498ceb0259fbe72"
@@ -1055,10 +1076,33 @@
     tslib "1.10.0"
     xmlhttprequest "1.8.0"
 
+"@firebase/app@0.5.1":
+  version "0.5.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/app/-/app-0.5.1.tgz#23ecc510e0d8efc3ef5550c459b436e9a885bd5c"
+  integrity sha1-I+zFEODY78PvVVDEWbQ26aiFvVw=
+  dependencies:
+    "@firebase/app-types" "0.5.0"
+    "@firebase/component" "0.1.2"
+    "@firebase/logger" "0.1.33"
+    "@firebase/util" "0.2.37"
+    dom-storage "2.1.0"
+    tslib "1.10.0"
+    xmlhttprequest "1.8.0"
+
+"@firebase/auth-interop-types@0.1.1":
+  version "0.1.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/auth-interop-types/-/auth-interop-types-0.1.1.tgz#b3e1bc5ea8b2df1c376b5fc14aae8a3572dbcace"
+  integrity sha1-s+G8Xqiy3xw3a1/BSq6KNXLbys4=
+
 "@firebase/auth-types@0.9.1":
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/@firebase/auth-types/-/auth-types-0.9.1.tgz#988cc0b5807ec20d56eaa6262f5fa317f9138a35"
   integrity sha512-3P+qkJHkPcbyF9mubHGC4Bz2uZ6ha647rhWi3eMihXdD6E+vTEGpAi/KOp6KYvZJRbGbuCrobP61Djay1PuFlA==
+
+"@firebase/auth-types@0.9.3":
+  version "0.9.3"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/auth-types/-/auth-types-0.9.3.tgz#c2e719a9911486177c31fb0c25a857e82c455e0d"
+  integrity sha1-wucZqZEUhhd8MfsMJahX6CxFXg0=
 
 "@firebase/auth@0.13.1":
   version "0.13.1"
@@ -1066,6 +1110,28 @@
   integrity sha512-JN/850MuahGea7NZMVbNTl3ASGFqSt8Hx9DuP4s0XZ1U0FcA439nSKGxjD0phn/HpwzYyU+sMxh1gmffuyWKMw==
   dependencies:
     "@firebase/auth-types" "0.9.1"
+
+"@firebase/auth@0.13.3":
+  version "0.13.3"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/auth/-/auth-0.13.3.tgz#ef07d09952ecb561ae5117850cf37581ece78c48"
+  integrity sha1-7wfQmVLstWGuUReFDPN1geznjEg=
+  dependencies:
+    "@firebase/auth-types" "0.9.3"
+
+"@firebase/component@0.1.2":
+  version "0.1.2"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/component/-/component-0.1.2.tgz#195caafeb556eaad562d60d24e5d5f36a10bc54b"
+  integrity sha1-GVyq/rVW6q1WLWDSTl1fNqELxUs=
+  dependencies:
+    "@firebase/util" "0.2.37"
+    tslib "1.10.0"
+
+"@firebase/database-types@0.4.10":
+  version "0.4.10"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/database-types/-/database-types-0.4.10.tgz#baa10bc78cfb57dd6159e0264b8305994a8e24d0"
+  integrity sha1-uqELx4z7V91hWeAmS4MFmUqOJNA=
+  dependencies:
+    "@firebase/app-types" "0.5.0"
 
 "@firebase/database-types@0.4.8":
   version "0.4.8"
@@ -1085,10 +1151,28 @@
     faye-websocket "0.11.3"
     tslib "1.10.0"
 
+"@firebase/database@0.5.18", "@firebase/database@^0.5.17":
+  version "0.5.18"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/database/-/database-0.5.18.tgz#1f9edda7ae1ebab95ce98911b2848b66e9deee13"
+  integrity sha1-H57dp64eurlc6YkRsoSLZune7hM=
+  dependencies:
+    "@firebase/auth-interop-types" "0.1.1"
+    "@firebase/component" "0.1.2"
+    "@firebase/database-types" "0.4.10"
+    "@firebase/logger" "0.1.33"
+    "@firebase/util" "0.2.37"
+    faye-websocket "0.11.3"
+    tslib "1.10.0"
+
 "@firebase/firestore-types@1.8.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@firebase/firestore-types/-/firestore-types-1.8.0.tgz#4d8bd14c7c4496f7f317ee52d1487f6dca8dc7f1"
   integrity sha512-Zy7IDqtjZPbKB6tP4dKuNks3tCvWOa3VhqEdl4WLyMKhvqh+/d0lzr+0HEEeEWR4IogsnJmLZUjDx0eqvqfCpg==
+
+"@firebase/firestore-types@1.9.0":
+  version "1.9.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/firestore-types/-/firestore-types-1.9.0.tgz#078ebb2728eb7d3d87ff5785b1fbcda07a183d39"
+  integrity sha1-B467JyjrfT2H/1eFsfvNoHoYPTk=
 
 "@firebase/firestore@1.8.0":
   version "1.8.0"
@@ -1103,10 +1187,29 @@
     grpc "1.24.2"
     tslib "1.10.0"
 
+"@firebase/firestore@1.9.2":
+  version "1.9.2"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/firestore/-/firestore-1.9.2.tgz#d9fa07e4d972710de4a3ec068ef02156a97fa21f"
+  integrity sha1-2foH5NlycQ3ko+wGjvAhVql/oh8=
+  dependencies:
+    "@firebase/component" "0.1.2"
+    "@firebase/firestore-types" "1.9.0"
+    "@firebase/logger" "0.1.33"
+    "@firebase/util" "0.2.37"
+    "@firebase/webchannel-wrapper" "0.2.34"
+    "@grpc/proto-loader" "^0.5.0"
+    grpc "1.24.2"
+    tslib "1.10.0"
+
 "@firebase/functions-types@0.3.11":
   version "0.3.11"
   resolved "https://registry.yarnpkg.com/@firebase/functions-types/-/functions-types-0.3.11.tgz#11b42df4a50e3ceb176aec7a998840e6f6d9680f"
   integrity sha512-sNLrBzTm6Rzq/QMbCgenhJW2LU+gQx0IMYZJJjz50dhYzQSfirlEdFEo8xm59aWhqCw87AI4XzNSGgu53C2OVA==
+
+"@firebase/functions-types@0.3.13":
+  version "0.3.13"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/functions-types/-/functions-types-0.3.13.tgz#f8fd6a3423abb32e2be1496268a514b500a547d1"
+  integrity sha1-+P1qNCOrsy4r4UliaKUUtQClR9E=
 
 "@firebase/functions@0.4.26":
   version "0.4.26"
@@ -1118,10 +1221,26 @@
     isomorphic-fetch "2.2.1"
     tslib "1.10.0"
 
+"@firebase/functions@0.4.29":
+  version "0.4.29"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/functions/-/functions-0.4.29.tgz#0cf8e90916969581c0bd61b4670ca7331f5850e4"
+  integrity sha1-DPjpCRaWlYHAvWG0ZwynMx9YUOQ=
+  dependencies:
+    "@firebase/component" "0.1.2"
+    "@firebase/functions-types" "0.3.13"
+    "@firebase/messaging-types" "0.4.0"
+    isomorphic-fetch "2.2.1"
+    tslib "1.10.0"
+
 "@firebase/installations-types@0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@firebase/installations-types/-/installations-types-0.2.2.tgz#a386665a7e0723e961a4bb4c8fa127b09c547732"
   integrity sha512-ABe4pJbBPYTyUQZ/BzyMZw9VEO+XYrClsxcVZ3WJTlhiu1OuBOeFfdbbsKPlywqwS5cVSM0xO9bJSgiMWQhUfQ==
+
+"@firebase/installations-types@0.2.4":
+  version "0.2.4"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/installations-types/-/installations-types-0.2.4.tgz#cb899efc58b9603bf62fd33739209f9c61b4cf82"
+  integrity sha1-y4me/Fi5YDv2L9M3OSCfnGG0z4I=
 
 "@firebase/installations@0.3.6":
   version "0.3.6"
@@ -1133,15 +1252,36 @@
     idb "3.0.2"
     tslib "1.10.0"
 
+"@firebase/installations@0.3.9":
+  version "0.3.9"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/installations/-/installations-0.3.9.tgz#8114fde81319fb5cbab0744c0f30011f5a9efd64"
+  integrity sha1-gRT96BMZ+1y6sHRMDzABH1qe/WQ=
+  dependencies:
+    "@firebase/component" "0.1.2"
+    "@firebase/installations-types" "0.2.4"
+    "@firebase/util" "0.2.37"
+    idb "3.0.2"
+    tslib "1.10.0"
+
 "@firebase/logger@0.1.31":
   version "0.1.31"
   resolved "https://registry.yarnpkg.com/@firebase/logger/-/logger-0.1.31.tgz#e0ab28af14333786952d7a5154f90d0453414d24"
   integrity sha512-1OEJaCMMaaT0VleNwer3bocbd25beR6KZUaHBweLNHEFxaNvniSv+lm83g08dWLBml3ZVOb945hp6m8REFx6/Q==
 
+"@firebase/logger@0.1.33":
+  version "0.1.33"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/logger/-/logger-0.1.33.tgz#cfb49e836fada9190dbb90e9053dd3876772c1bb"
+  integrity sha1-z7Seg2+tqRkNu5DpBT3Th2dywbs=
+
 "@firebase/messaging-types@0.3.5":
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/@firebase/messaging-types/-/messaging-types-0.3.5.tgz#92fcd3d6a91116afead63bc7bebebe78162b6c63"
   integrity sha512-pRhKJlE/eXc6uBGCmi7BjBen427lbIVlxUH9aKpu5Nrd8nUQ507WwVVL098A0oY0Kx2AJxjwjmtDjDYCaFm9Hg==
+
+"@firebase/messaging-types@0.4.0":
+  version "0.4.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/messaging-types/-/messaging-types-0.4.0.tgz#59a1f2734e7576b22563d105c1daf4e8a405fe94"
+  integrity sha1-WaHyc051drIlY9EFwdr06KQF/pQ=
 
 "@firebase/messaging@0.5.7":
   version "0.5.7"
@@ -1153,10 +1293,26 @@
     "@firebase/util" "0.2.34"
     tslib "1.10.0"
 
+"@firebase/messaging@0.6.1":
+  version "0.6.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/messaging/-/messaging-0.6.1.tgz#036700850cdc525a5f58737602430d60712e8c6e"
+  integrity sha1-A2cAhQzcUlpfWHN2AkMNYHEujG4=
+  dependencies:
+    "@firebase/component" "0.1.2"
+    "@firebase/installations" "0.3.9"
+    "@firebase/messaging-types" "0.4.0"
+    "@firebase/util" "0.2.37"
+    tslib "1.10.0"
+
 "@firebase/performance-types@0.0.6":
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/@firebase/performance-types/-/performance-types-0.0.6.tgz#c588bec1fda4928659772988b4f7cbe1c4434bb8"
   integrity sha512-nfiIWBuMVXj+G+xIQwpwQjFhtY85GnywAL1S/CTEMTe6tgc9nA+x9ycFU2rEIl3XVTeaHqs616pe1gYToGpRJQ==
+
+"@firebase/performance-types@0.0.8":
+  version "0.0.8"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/performance-types/-/performance-types-0.0.8.tgz#2ed5510dd06d2cb5650382106272b6597187f5b4"
+  integrity sha1-LtVRDdBtLLVlA4IQYnK2WXGH9bQ=
 
 "@firebase/performance@0.2.26":
   version "0.2.26"
@@ -1169,6 +1325,18 @@
     "@firebase/util" "0.2.34"
     tslib "1.10.0"
 
+"@firebase/performance@0.2.29":
+  version "0.2.29"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/performance/-/performance-0.2.29.tgz#3a2573a0fdd21717a70eacbaff23b88b64097d60"
+  integrity sha1-OiVzoP3SFxenDqy6/yO4i2QJfWA=
+  dependencies:
+    "@firebase/component" "0.1.2"
+    "@firebase/installations" "0.3.9"
+    "@firebase/logger" "0.1.33"
+    "@firebase/performance-types" "0.0.8"
+    "@firebase/util" "0.2.37"
+    tslib "1.10.0"
+
 "@firebase/polyfill@0.3.29":
   version "0.3.29"
   resolved "https://registry.yarnpkg.com/@firebase/polyfill/-/polyfill-0.3.29.tgz#0a7df47780407c16fb29951acee6c55afe6578a2"
@@ -1178,10 +1346,36 @@
     promise-polyfill "8.1.3"
     whatwg-fetch "2.0.4"
 
+"@firebase/polyfill@0.3.30":
+  version "0.3.30"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/polyfill/-/polyfill-0.3.30.tgz#c6c041abed7c8ff117a2596a450d1cca7a999e23"
+  integrity sha1-xsBBq+18j/EXollqRQ0cynqZniM=
+  dependencies:
+    core-js "3.4.8"
+    promise-polyfill "8.1.3"
+    whatwg-fetch "2.0.4"
+
 "@firebase/remote-config-types@0.1.3":
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/@firebase/remote-config-types/-/remote-config-types-0.1.3.tgz#9ea39aa71dc88dcd9a80889eacfe66699e85a8ce"
   integrity sha512-5niKHAHDEaTF6Ch7Jc91WNCy3ZdKEjYlq0l6tDTyjN0lHp6qJW1IKdS3ExBBRmpqP8vjQOUxSDiIPbIZV3ncHw==
+
+"@firebase/remote-config-types@0.1.5":
+  version "0.1.5"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/remote-config-types/-/remote-config-types-0.1.5.tgz#5f01f4d73a2c5869042316ef973fa6fa80e38d47"
+  integrity sha1-XwH01zosWGkEIxbvlz+m+oDjjUc=
+
+"@firebase/remote-config@0.1.10":
+  version "0.1.10"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/remote-config/-/remote-config-0.1.10.tgz#72a397d6b3d4d96edf7a11156ed3661c4d0ef100"
+  integrity sha1-cqOX1rPU2W7fehEVbtNmHE0O8QA=
+  dependencies:
+    "@firebase/component" "0.1.2"
+    "@firebase/installations" "0.3.9"
+    "@firebase/logger" "0.1.33"
+    "@firebase/remote-config-types" "0.1.5"
+    "@firebase/util" "0.2.37"
+    tslib "1.10.0"
 
 "@firebase/remote-config@0.1.7":
   version "0.1.7"
@@ -1199,6 +1393,11 @@
   resolved "https://registry.yarnpkg.com/@firebase/storage-types/-/storage-types-0.3.6.tgz#9cbbbe65e1b0d19f7bfdb4d5e684e8d26e202057"
   integrity sha512-yHsYhaFQMryR/lgXIdm1mMQwmyC76HLpQHtAxB5WF9FzwjXishJTn1Qe0+JuSWmlHmYXI3EyrCr/JUAv2OS1wQ==
 
+"@firebase/storage-types@0.3.8":
+  version "0.3.8"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/storage-types/-/storage-types-0.3.8.tgz#3b5e16c9ae8b50f5cd4e7320fa5fc0933150e7d2"
+  integrity sha1-O14Wya6LUPXNTnMg+l/AkzFQ59I=
+
 "@firebase/storage@0.3.20":
   version "0.3.20"
   resolved "https://registry.yarnpkg.com/@firebase/storage/-/storage-0.3.20.tgz#62a56cda7e9885b9ece0669af231ff333862d864"
@@ -1208,10 +1407,27 @@
     "@firebase/util" "0.2.34"
     tslib "1.10.0"
 
+"@firebase/storage@0.3.23":
+  version "0.3.23"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/storage/-/storage-0.3.23.tgz#dc480a2568f7c7f2cf592e2330c3ba327b04b758"
+  integrity sha1-3EgKJWj3x/LPWS4jMMO6MnsEt1g=
+  dependencies:
+    "@firebase/component" "0.1.2"
+    "@firebase/storage-types" "0.3.8"
+    "@firebase/util" "0.2.37"
+    tslib "1.10.0"
+
 "@firebase/util@0.2.34":
   version "0.2.34"
   resolved "https://registry.yarnpkg.com/@firebase/util/-/util-0.2.34.tgz#a84fc09a68e82012b650964944e8ffc956ec4912"
   integrity sha512-k8pNIzNLncvxDrqYVZN6/lnqZWy0OCJuZmK5urodARwdLy3sVLw5p9PWce0v9qzMO8tLdrBbCpnm1KJ8jg/kBQ==
+  dependencies:
+    tslib "1.10.0"
+
+"@firebase/util@0.2.37":
+  version "0.2.37"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/util/-/util-0.2.37.tgz#7275eaa41a3194dccb17f1ec89c69ff50a4a2ae3"
+  integrity sha1-cnXqpBoxlNzLF/Hsicaf9QpKKuM=
   dependencies:
     tslib "1.10.0"
 
@@ -1220,10 +1436,41 @@
   resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.2.32.tgz#ae5e1c0dc6856d8b9ae192bc000e43b993acba68"
   integrity sha512-kXnsBuzmtcOntliDgxAGJJ8JHPOmZ6KgS2v0/5Fb5KXpN9UIFyeaE8pfdkBG9tESdPmGdKpJz781fEIMdMtd8A==
 
+"@firebase/webchannel-wrapper@0.2.34":
+  version "0.2.34"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.2.34.tgz#be93617e92dd6f9cb505f459c8afe972ede86075"
+  integrity sha1-vpNhfpLdb5y1BfRZyK/pcu3oYHU=
+
 "@fortawesome/fontawesome-free@^5.11.2":
   version "5.11.2"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.11.2.tgz#8644bc25b19475779a7b7c1fc104bc0a794f4465"
   integrity sha512-XiUPoS79r1G7PcpnNtq85TJ7inJWe0v+b5oZJZKb0pGHNIV6+UiNeQWiFGmuQ0aj7GEhnD/v9iqxIsjuRKtEnQ==
+
+"@google-cloud/common@^2.1.1":
+  version "2.2.5"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@google-cloud/common/-/common-2.2.5.tgz#6b8667dd0d01784f815ad9a0b779391bdaa58043"
+  integrity sha1-a4Zn3Q0BeE+BWtmgt3k5G9qlgEM=
+  dependencies:
+    "@google-cloud/projectify" "^1.0.0"
+    "@google-cloud/promisify" "^1.0.0"
+    arrify "^2.0.0"
+    duplexify "^3.6.0"
+    ent "^2.2.0"
+    extend "^3.0.2"
+    google-auth-library "^5.5.0"
+    retry-request "^4.0.0"
+    teeny-request "^5.2.1"
+
+"@google-cloud/firestore@^3.0.0":
+  version "3.3.4"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@google-cloud/firestore/-/firestore-3.3.4.tgz#9c5650b9329fa514c32c2e6678ec31c1cba01563"
+  integrity sha1-nFZQuTKfpRTDLC5meOwxwcugFWM=
+  dependencies:
+    deep-equal "^2.0.0"
+    functional-red-black-tree "^1.0.1"
+    google-gax "^1.13.0"
+    readable-stream "^3.4.0"
+    through2 "^3.0.0"
 
 "@google-cloud/paginator@^2.0.0":
   version "2.0.2"
@@ -1270,10 +1517,45 @@
     p-defer "^3.0.0"
     protobufjs "^6.8.1"
 
+"@google-cloud/storage@^4.1.2":
+  version "4.2.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@google-cloud/storage/-/storage-4.2.0.tgz#f03a49d4556f08ec000bb9386e12c636f66e783d"
+  integrity sha1-8DpJ1FVvCOwAC7k4bhLGNvZueD0=
+  dependencies:
+    "@google-cloud/common" "^2.1.1"
+    "@google-cloud/paginator" "^2.0.0"
+    "@google-cloud/promisify" "^1.0.0"
+    arrify "^2.0.0"
+    compressible "^2.0.12"
+    concat-stream "^2.0.0"
+    date-and-time "^0.11.0"
+    duplexify "^3.5.0"
+    extend "^3.0.2"
+    gaxios "^2.0.1"
+    gcs-resumable-upload "^2.2.4"
+    hash-stream-validation "^0.2.2"
+    mime "^2.2.0"
+    mime-types "^2.0.8"
+    onetime "^5.1.0"
+    p-limit "^2.2.0"
+    pumpify "^2.0.0"
+    readable-stream "^3.4.0"
+    snakeize "^0.1.0"
+    stream-events "^1.0.1"
+    through2 "^3.0.0"
+    xdg-basedir "^4.0.0"
+
 "@grpc/grpc-js@0.6.9":
   version "0.6.9"
   resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-0.6.9.tgz#49e0b32b92b822df294cc576df169cc6112063b4"
   integrity sha512-r1nDOEEiYmAsVYBaS4DPPqdwPOXPw7YhVOnnpPdWhlNtKbYzPash6DqWTTza9gBiYMA5d2Wiq6HzrPqsRaP4yA==
+  dependencies:
+    semver "^6.2.0"
+
+"@grpc/grpc-js@^0.6.12":
+  version "0.6.15"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@grpc/grpc-js/-/grpc-js-0.6.15.tgz#534d1051ddced4e5e5849212789dd64014214dd4"
+  integrity sha1-U00QUd3O1OXlhJISeJ3WQBQhTdQ=
   dependencies:
     semver "^6.2.0"
 
@@ -1904,6 +2186,13 @@
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
+"@types/fs-extra@^8.0.1":
+  version "8.0.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@types/fs-extra/-/fs-extra-8.0.1.tgz#a2378d6e7e8afea1564e44aafa2e207dadf77686"
+  integrity sha1-ojeNbn6K/qFWTkSq+i4gfa33doY=
+  dependencies:
+    "@types/node" "*"
+
 "@types/glob@^7.1.1":
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.1.1.tgz#aa59a1c6e3fbc421e07ccd31a944c30eba521575"
@@ -1957,6 +2246,11 @@
   version "10.17.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.6.tgz#1aaabd6f6470a6ac3824ab1e94d731ca1326d93d"
   integrity sha512-0a2X6cgN3RdPBL2MIlR6Lt0KlM7fOFsutuXcdglcOq6WvLnYXgPQSh0Mx6tO1KCAE8MxbHSOSTWDoUxRq+l3DA==
+
+"@types/node@^8.10.59":
+  version "8.10.59"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/@types/node/-/node-8.10.59.tgz#9e34261f30183f9777017a13d185dfac6b899e04"
+  integrity sha1-njQmHzAYP5d3AXoT0YXfrGuJngQ=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -2365,6 +2659,11 @@ adjust-sourcemap-loader@2.0.0:
     loader-utils "1.2.3"
     object-path "0.11.4"
     regex-parser "2.2.10"
+
+agent-base@5:
+  version "5.1.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/agent-base/-/agent-base-5.1.1.tgz#e8fb3f242959db44d63be665db7a8e739537a32c"
+  integrity sha1-6Ps/JClZ20TWO+Zl23qOc5U3oyw=
 
 agent-base@^4.3.0:
   version "4.3.0"
@@ -4080,6 +4379,13 @@ compress-commons@^2.1.1:
     normalize-path "^3.0.0"
     readable-stream "^2.3.6"
 
+compressible@^2.0.12:
+  version "2.0.18"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/compressible/-/compressible-2.0.18.tgz#af53cca6b070d4c3c0750fbd77286a6d7cc46fba"
+  integrity sha1-r1PMprBw1MPAdQ+9dyhqbXzEb7o=
+  dependencies:
+    mime-db ">= 1.43.0 < 2"
+
 compressible@~2.0.16:
   version "2.0.17"
   resolved "https://registry.yarnpkg.com/compressible/-/compressible-2.0.17.tgz#6e8c108a16ad58384a977f3a482ca20bff2f38c1"
@@ -4115,6 +4421,16 @@ concat-stream@^1.5.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+concat-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/concat-stream/-/concat-stream-2.0.0.tgz#414cf5af790a48c60ab9be4527d56d5e41133cb1"
+  integrity sha1-QUz1r3kKSMYKub5FJ9VtXkETPLE=
+  dependencies:
+    buffer-from "^1.0.0"
+    inherits "^2.0.3"
+    readable-stream "^3.0.2"
+    typedarray "^0.0.6"
+
 configstore@^1.2.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/configstore/-/configstore-1.4.0.tgz#c35781d0501d268c25c54b8b17f6240e8a4fb021"
@@ -4140,6 +4456,18 @@ configstore@^3.0.0:
     unique-string "^1.0.0"
     write-file-atomic "^2.0.0"
     xdg-basedir "^3.0.0"
+
+configstore@^5.0.0:
+  version "5.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/configstore/-/configstore-5.0.0.tgz#37de662c7a49b5fe8dbcf8f6f5818d2d81ed852b"
+  integrity sha1-N95mLHpJtf6NvPj29YGNLYHthSs=
+  dependencies:
+    dot-prop "^5.1.0"
+    graceful-fs "^4.1.2"
+    make-dir "^3.0.0"
+    unique-string "^2.0.0"
+    write-file-atomic "^3.0.0"
+    xdg-basedir "^4.0.0"
 
 confusing-browser-globals@^1.0.9:
   version "1.0.9"
@@ -4268,6 +4596,11 @@ core-js@3.4.1:
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.4.1.tgz#76dd6828412900ab27c8ce0b22e6114d7ce21b18"
   integrity sha512-KX/dnuY/J8FtEwbnrzmAjUYgLqtk+cxM86hfG60LGiW3MmltIc2yAmDgBgEkfm0blZhUrdr1Zd84J2Y14mLxzg==
+
+core-js@3.4.8:
+  version "3.4.8"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/core-js/-/core-js-3.4.8.tgz#e0fc0c61f2ef90cbc10c531dbffaa46dfb7152dd"
+  integrity sha1-4PwMYfLvkMvBDFMdv/qkbftxUt0=
 
 core-js@^1.0.0:
   version "1.2.7"
@@ -4490,6 +4823,11 @@ crypto-random-string@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-1.0.0.tgz#a230f64f568310e1498009940790ec99545bca7e"
   integrity sha1-ojD2T1aDEOFJgAmUB5DsmVRbyn4=
+
+crypto-random-string@^2.0.0:
+  version "2.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
+  integrity sha1-7yp6lm7BEIM4g2m6oC6+rSKbMNU=
 
 css-blank-pseudo@^0.1.4:
   version "0.1.4"
@@ -4780,6 +5118,11 @@ data-urls@^1.0.0, data-urls@^1.1.0:
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
 
+date-and-time@^0.11.0:
+  version "0.11.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/date-and-time/-/date-and-time-0.11.1.tgz#0c3c8b21811562c53345b497c5e1c731b12e99eb"
+  integrity sha1-DDyLIYEVYsUzRbSXxeHHMbEumes=
+
 date-fns@^1.27.2:
   version "1.30.1"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
@@ -4791,6 +5134,13 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.8, debug@^2.6.
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
   dependencies:
     ms "2.0.0"
+
+debug@4, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+  dependencies:
+    ms "^2.1.1"
 
 debug@4.1.0:
   version "4.1.0"
@@ -4810,13 +5160,6 @@ debug@^3.0.0, debug@^3.0.1, debug@^3.1.0, debug@^3.1.1, debug@^3.2.5, debug@^3.2
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
   integrity sha512-mel+jf7nrtEl5Pn1Qx46zARXKDpBbvzezse7p7LqINmdoIk8PYP5SySaxEmYv6TZ0JyEKA1hsCId6DIhgITtWQ==
-  dependencies:
-    ms "^2.1.1"
-
-debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
-  integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
   dependencies:
     ms "^2.1.1"
 
@@ -4866,6 +5209,24 @@ deep-equal@^1.0.1:
     object-is "^1.0.1"
     object-keys "^1.1.1"
     regexp.prototype.flags "^1.2.0"
+
+deep-equal@^2.0.0:
+  version "2.0.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/deep-equal/-/deep-equal-2.0.1.tgz#fc12bbd6850e93212f21344748682ccc5a8813cf"
+  integrity sha1-/BK71oUOkyEvITRHSGgszFqIE88=
+  dependencies:
+    es-abstract "^1.16.3"
+    es-get-iterator "^1.0.1"
+    is-arguments "^1.0.4"
+    is-date-object "^1.0.1"
+    is-regex "^1.0.4"
+    isarray "^2.0.5"
+    object-is "^1.0.1"
+    object-keys "^1.1.1"
+    regexp.prototype.flags "^1.2.0"
+    side-channel "^1.0.1"
+    which-boxed-primitive "^1.0.1"
+    which-collection "^1.0.0"
 
 deep-extend@^0.6.0:
   version "0.6.0"
@@ -5007,6 +5368,13 @@ dialog-polyfill@^0.4.7:
   version "0.4.10"
   resolved "https://registry.yarnpkg.com/dialog-polyfill/-/dialog-polyfill-0.4.10.tgz#c4ea68a0deed4abb59a6a2a025c548b278cd532e"
   integrity sha512-j5yGMkP8T00UFgyO+78OxiN5vC5dzRQF3BEio+LhNvDbyfxWBsi3sfPArDm54VloaJwy2hm3erEiDWqHRC8rzw==
+
+dicer@^0.3.0:
+  version "0.3.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/dicer/-/dicer-0.3.0.tgz#eacd98b3bfbf92e8ab5c2fdb71aaac44bb06b872"
+  integrity sha1-6s2Ys7+/kuirXC/bcaqsRLsGuHI=
+  dependencies:
+    streamsearch "0.1.2"
 
 didyoumean@^1.2.1:
   version "1.2.1"
@@ -5183,6 +5551,13 @@ dot-prop@^4.1.0, dot-prop@^4.1.1:
   dependencies:
     is-obj "^1.0.0"
 
+dot-prop@^5.1.0:
+  version "5.2.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/dot-prop/-/dot-prop-5.2.0.tgz#c34ecc29556dc45f1f4c22697b6f4904e0cc4fcb"
+  integrity sha1-w07MKVVtxF8fTCJpe29JBODMT8s=
+  dependencies:
+    is-obj "^2.0.0"
+
 dotenv-defaults@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/dotenv-defaults/-/dotenv-defaults-1.0.2.tgz#441cf5f067653fca4bbdce9dd3b803f6f84c585d"
@@ -5229,7 +5604,7 @@ duplexer@^0.1.1:
   resolved "https://registry.yarnpkg.com/duplexer/-/duplexer-0.1.1.tgz#ace6ff808c1ce66b57d1ebf97977acb02334cfc1"
   integrity sha1-rOb/gIwc5mtX0ev5eXessCM0z8E=
 
-duplexify@^3.4.2, duplexify@^3.6.0:
+duplexify@^3.4.2, duplexify@^3.5.0, duplexify@^3.6.0:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/duplexify/-/duplexify-3.7.1.tgz#2a4df5317f6ccfd91f86d6fd25d8d8a103b88309"
   integrity sha512-07z8uv2wMyS51kKhD1KsdXJg5WQ6t93RneqRxUHnskXVtlYYkLqM0gqStQZ3pj073g687jPCHrqNfCzawLYh5g==
@@ -5237,6 +5612,16 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     end-of-stream "^1.0.0"
     inherits "^2.0.1"
     readable-stream "^2.0.0"
+    stream-shift "^1.0.0"
+
+duplexify@^4.1.1:
+  version "4.1.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/duplexify/-/duplexify-4.1.1.tgz#7027dc374f157b122a8ae08c2d3ea4d2d953aa61"
+  integrity sha1-cCfcN08VexIqiuCMLT6k0tlTqmE=
+  dependencies:
+    end-of-stream "^1.4.1"
+    inherits "^2.0.3"
+    readable-stream "^3.1.1"
     stream-shift "^1.0.0"
 
 ecc-jsbn@~0.1.1:
@@ -5330,6 +5715,11 @@ enhanced-resolve@^4.1.0:
     memory-fs "^0.5.0"
     tapable "^1.0.0"
 
+ent@^2.2.0:
+  version "2.2.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/ent/-/ent-2.2.0.tgz#e964219325a21d05f44466a2f686ed6ce5f5dd1d"
+  integrity sha1-6WQhkyWiHQX0RGai9obtbOX13R0=
+
 entities@^1.1.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.2.tgz#bdfa735299664dfafd34529ed4f8522a275fea56"
@@ -5369,6 +5759,36 @@ es-abstract@^1.12.0, es-abstract@^1.15.0, es-abstract@^1.5.1, es-abstract@^1.7.0
     object-keys "^1.1.1"
     string.prototype.trimleft "^2.1.0"
     string.prototype.trimright "^2.1.0"
+
+es-abstract@^1.16.3, es-abstract@^1.17.0-next.1:
+  version "1.17.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/es-abstract/-/es-abstract-1.17.1.tgz#1331afa4cba2628b63e988104b9846c2d631b380"
+  integrity sha1-EzGvpMuiYotj6YgQS5hGwtYxs4A=
+  dependencies:
+    es-to-primitive "^1.2.1"
+    function-bind "^1.1.1"
+    has "^1.0.3"
+    has-symbols "^1.0.1"
+    is-callable "^1.1.5"
+    is-regex "^1.0.5"
+    object-inspect "^1.7.0"
+    object-keys "^1.1.1"
+    object.assign "^4.1.0"
+    string.prototype.trimleft "^2.1.1"
+    string.prototype.trimright "^2.1.1"
+
+es-get-iterator@^1.0.1:
+  version "1.0.2"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/es-get-iterator/-/es-get-iterator-1.0.2.tgz#bc99065aa8c98ce52bc86ab282dedbba4120e0b3"
+  integrity sha1-vJkGWqjJjOUryGqygt7bukEg4LM=
+  dependencies:
+    es-abstract "^1.17.0-next.1"
+    has-symbols "^1.0.1"
+    is-arguments "^1.0.4"
+    is-map "^2.0.0"
+    is-set "^2.0.0"
+    is-string "^1.0.4"
+    isarray "^2.0.5"
 
 es-to-primitive@^1.2.1:
   version "1.2.1"
@@ -6314,6 +6734,20 @@ find-up@^4.0.0, find-up@^4.1.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
+firebase-admin@>=5.0.0:
+  version "8.9.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/firebase-admin/-/firebase-admin-8.9.0.tgz#8a0b0178d0404b73f649e2af28adb210092701f7"
+  integrity sha1-igsBeNBAS3P2SeKvKK2yEAknAfc=
+  dependencies:
+    "@firebase/database" "^0.5.17"
+    "@types/node" "^8.10.59"
+    dicer "^0.3.0"
+    jsonwebtoken "8.1.0"
+    node-forge "0.7.4"
+  optionalDependencies:
+    "@google-cloud/firestore" "^3.0.0"
+    "@google-cloud/storage" "^4.1.2"
+
 firebase-ci@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/firebase-ci/-/firebase-ci-0.7.0.tgz#f0bc5c108d3d2e80b9b5e2b7ca5b4cf0af454f87"
@@ -6374,6 +6808,26 @@ firebase-tools@^7.7.0:
     update-notifier "^2.5.0"
     uuid "^3.0.0"
     winston "^1.0.1"
+
+firebase@>=3.0.0:
+  version "7.6.2"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/firebase/-/firebase-7.6.2.tgz#db591aacd97cb9f83c673f19812e5bc540988180"
+  integrity sha1-21karNl8ufg8Zz8ZgS5bxUCYgYA=
+  dependencies:
+    "@firebase/analytics" "0.2.10"
+    "@firebase/app" "0.5.1"
+    "@firebase/app-types" "0.5.0"
+    "@firebase/auth" "0.13.3"
+    "@firebase/database" "0.5.18"
+    "@firebase/firestore" "1.9.2"
+    "@firebase/functions" "0.4.29"
+    "@firebase/installations" "0.3.9"
+    "@firebase/messaging" "0.6.1"
+    "@firebase/performance" "0.2.29"
+    "@firebase/polyfill" "0.3.30"
+    "@firebase/remote-config" "0.1.10"
+    "@firebase/storage" "0.3.23"
+    "@firebase/util" "0.2.37"
 
 firebase@^7.5.0:
   version "7.5.0"
@@ -6707,6 +7161,17 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
+gaxios@^2.0.0, gaxios@^2.0.1:
+  version "2.2.2"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/gaxios/-/gaxios-2.2.2.tgz#f58516ead6868d997fcf267d4fe2dcef652bd1a3"
+  integrity sha1-9YUW6taGjZl/zyZ9T+Lc72Ur0aM=
+  dependencies:
+    abort-controller "^3.0.0"
+    extend "^3.0.2"
+    https-proxy-agent "^4.0.0"
+    is-stream "^2.0.0"
+    node-fetch "^2.3.0"
+
 gaxios@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/gaxios/-/gaxios-2.1.0.tgz#b5d04ec19bf853d4589ccc2e7d61f0f2ab62afee"
@@ -6740,6 +7205,18 @@ gcp-metadata@^3.2.0:
   dependencies:
     gaxios "^2.1.0"
     json-bigint "^0.3.0"
+
+gcs-resumable-upload@^2.2.4:
+  version "2.3.2"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/gcs-resumable-upload/-/gcs-resumable-upload-2.3.2.tgz#f04a7459483f871f0de71db7454296938688a296"
+  integrity sha1-8Ep0WUg/hx8N5x23RUKWk4aIopY=
+  dependencies:
+    abort-controller "^3.0.0"
+    configstore "^5.0.0"
+    gaxios "^2.0.0"
+    google-auth-library "^5.0.0"
+    pumpify "^2.0.0"
+    stream-events "^1.0.4"
 
 get-caller-file@^1.0.1:
   version "1.0.3"
@@ -7024,6 +7501,27 @@ google-auto-auth@^0.7.2:
     google-auth-library "^0.10.0"
     request "^2.79.0"
 
+google-gax@^1.13.0:
+  version "1.13.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/google-gax/-/google-gax-1.13.0.tgz#82ed44155b296b0069178320c31c75d1bd8a6cd3"
+  integrity sha1-gu1EFVspawBpF4Mgwxx10b2KbNM=
+  dependencies:
+    "@grpc/grpc-js" "^0.6.12"
+    "@grpc/proto-loader" "^0.5.1"
+    "@types/fs-extra" "^8.0.1"
+    "@types/long" "^4.0.0"
+    abort-controller "^3.0.0"
+    duplexify "^3.6.0"
+    google-auth-library "^5.0.0"
+    is-stream-ended "^0.1.4"
+    lodash.at "^4.6.0"
+    lodash.has "^4.5.2"
+    node-fetch "^2.6.0"
+    protobufjs "^6.8.8"
+    retry-request "^4.0.0"
+    semver "^7.0.0"
+    walkdir "^0.4.0"
+
 google-gax@^1.7.5:
   version "1.11.1"
   resolved "https://registry.yarnpkg.com/google-gax/-/google-gax-1.11.1.tgz#9be67c762f25445a6d8d410207f2c6e180b3b947"
@@ -7277,6 +7775,13 @@ hash-base@^3.0.0:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+hash-stream-validation@^0.2.2:
+  version "0.2.2"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/hash-stream-validation/-/hash-stream-validation-0.2.2.tgz#6b34c4fce5e9fce265f1d3380900049d92a10090"
+  integrity sha1-azTE/OXp/OJl8dM4CQAEnZKhAJA=
+  dependencies:
+    through2 "^2.0.0"
+
 hash.js@^1.0.0, hash.js@^1.0.3:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/hash.js/-/hash.js-1.1.7.tgz#0babca538e8d4ee4a0f8988d68866537a003cf42"
@@ -7476,6 +7981,14 @@ http-errors@~1.7.2:
   resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.10.tgz#92c9c1374c35085f75db359ec56cc257cbb93fa4"
   integrity sha1-ksnBN0w1CF912zWexWzCV8u5P6Q=
 
+http-proxy-agent@^3.0.0:
+  version "3.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/http-proxy-agent/-/http-proxy-agent-3.0.0.tgz#598f42dc815949a11e2c6dbfdf24cd8a4c165327"
+  integrity sha1-WY9C3IFZSaEeLG2/3yTNikwWUyc=
+  dependencies:
+    agent-base "5"
+    debug "4"
+
 http-proxy-middleware@^0.19.1:
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-0.19.1.tgz#183c7dc4aa1479150306498c210cdaf96080a43a"
@@ -7516,6 +8029,14 @@ https-proxy-agent@^3.0.0:
   dependencies:
     agent-base "^4.3.0"
     debug "^3.1.0"
+
+https-proxy-agent@^4.0.0:
+  version "4.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/https-proxy-agent/-/https-proxy-agent-4.0.0.tgz#702b71fb5520a132a66de1f67541d9e62154d82b"
+  integrity sha1-cCtx+1UgoTKmbeH2dUHZ5iFU2Cs=
+  dependencies:
+    agent-base "5"
+    debug "4"
 
 husky@^3.1.0:
   version "3.1.0"
@@ -7922,6 +8443,11 @@ is-arrayish@^0.3.1:
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
   integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
 
+is-bigint@^1.0.0:
+  version "1.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-bigint/-/is-bigint-1.0.0.tgz#73da8c33208d00f130e9b5e15d23eac9215601c4"
+  integrity sha1-c9qMMyCNAPEw6bXhXSPqySFWAcQ=
+
 is-binary-path@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-binary-path/-/is-binary-path-1.0.1.tgz#75f16642b480f187a711c814161fd3a4a7655898"
@@ -7935,6 +8461,11 @@ is-binary-path@~2.1.0:
   integrity sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==
   dependencies:
     binary-extensions "^2.0.0"
+
+is-boolean-object@^1.0.0:
+  version "1.0.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-boolean-object/-/is-boolean-object-1.0.1.tgz#10edc0900dd127697a92f6f9807c7617d68ac48e"
+  integrity sha1-EO3AkA3RJ2l6kvb5gHx2F9aKxI4=
 
 is-buffer@^1.0.2, is-buffer@^1.1.4, is-buffer@^1.1.5:
   version "1.1.6"
@@ -7950,6 +8481,11 @@ is-callable@^1.1.4:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
   integrity sha512-r5p9sxJjYnArLjObpjA4xu5EKI3CuKHkJXMhT7kwbpUyIFD1n5PMAsoPvWnvtZiNz7LjkYDRZhd7FlI0eMijEA==
+
+is-callable@^1.1.5:
+  version "1.1.5"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-callable/-/is-callable-1.1.5.tgz#f7e46b596890456db74e7f6e976cb3273d06faab"
+  integrity sha1-9+RrWWiQRW23Tn9ul2yzJz0G+qs=
 
 is-ci@^1.0.10:
   version "1.2.1"
@@ -8121,10 +8657,20 @@ is-installed-globally@^0.1.0:
     global-dirs "^0.1.0"
     is-path-inside "^1.0.0"
 
+is-map@^2.0.0:
+  version "2.0.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-map/-/is-map-2.0.1.tgz#520dafc4307bb8ebc33b813de5ce7c9400d644a1"
+  integrity sha1-Ug2vxDB7uOvDO4E95c58lADWRKE=
+
 is-npm@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-npm/-/is-npm-1.0.0.tgz#f2fb63a65e4905b406c86072765a1a4dc793b9f4"
   integrity sha1-8vtjpl5JBbQGyGBydloaTceTufQ=
+
+is-number-object@^1.0.3:
+  version "1.0.4"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-number-object/-/is-number-object-1.0.4.tgz#36ac95e741cf18b283fc1ddf5e83da798e3ec197"
+  integrity sha1-NqyV50HPGLKD/B3fXoPaeY4+wZc=
 
 is-number@^2.1.0:
   version "2.1.0"
@@ -8154,6 +8700,11 @@ is-obj@^1.0.0, is-obj@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
   integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
+
+is-obj@^2.0.0:
+  version "2.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-obj/-/is-obj-2.0.0.tgz#473fb05d973705e3fd9620545018ca8e22ef4982"
+  integrity sha1-Rz+wXZc3BeP9liBUUBjKjiLvSYI=
 
 is-observable@^1.1.0:
   version "1.1.0"
@@ -8230,6 +8781,13 @@ is-regex@^1.0.4:
   dependencies:
     has "^1.0.1"
 
+is-regex@^1.0.5:
+  version "1.0.5"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-regex/-/is-regex-1.0.5.tgz#39d589a358bf18967f726967120b8fc1aed74eae"
+  integrity sha1-OdWJo1i/GJZ/cmlnEguPwa7XTq4=
+  dependencies:
+    has "^1.0.3"
+
 is-regexp@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-regexp/-/is-regexp-1.0.0.tgz#fd2d883545c46bac5a633e7b9a09e87fa2cb5069"
@@ -8255,6 +8813,11 @@ is-root@2.1.0:
   resolved "https://registry.yarnpkg.com/is-root/-/is-root-2.1.0.tgz#809e18129cf1129644302a4f8544035d51984a9c"
   integrity sha512-AGOriNp96vNBd3HtU+RzFEc75FfR5ymiYv8E553I71SCeXBiMsVDUtdio1OEFvrPyLIQ9tVR5RxXIFe5PUFjMg==
 
+is-set@^2.0.0:
+  version "2.0.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-set/-/is-set-2.0.1.tgz#d1604afdab1724986d30091575f54945da7e5f43"
+  integrity sha1-0WBK/asXJJhtMAkVdfVJRdp+X0M=
+
 is-stream-ended@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/is-stream-ended/-/is-stream-ended-0.1.4.tgz#f50224e95e06bce0e356d440a4827cd35b267eda"
@@ -8269,6 +8832,11 @@ is-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-2.0.0.tgz#bde9c32680d6fae04129d6ac9d921ce7815f78e3"
   integrity sha512-XCoy+WlUr7d1+Z8GgSuXmpuUFC9fOhRXglJMx+dwLKTkL44Cjd4W1Z5P+BQZpr+cR93aGP4S/s7Ftw6Nd/kiEw==
+
+is-string@^1.0.4:
+  version "1.0.5"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-string/-/is-string-1.0.5.tgz#40493ed198ef3ff477b8c7f92f644ec82a5cd3a6"
+  integrity sha1-QEk+0ZjvP/R3uMf5L2ROyCpc06Y=
 
 is-supported-regexp-flag@^1.0.0:
   version "1.0.1"
@@ -8303,6 +8871,16 @@ is-utf8@^0.2.0:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
   integrity sha1-Sw2hRCEE0bM2NA6AeX6GXPOffXI=
+
+is-weakmap@^2.0.0:
+  version "2.0.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-weakmap/-/is-weakmap-2.0.1.tgz#5008b59bdc43b698201d18f62b37b2ca243e8cf2"
+  integrity sha1-UAi1m9xDtpggHRj2KzeyyiQ+jPI=
+
+is-weakset@^2.0.0:
+  version "2.0.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/is-weakset/-/is-weakset-2.0.1.tgz#e9a0af88dbd751589f5e50d80f4c98b780884f83"
+  integrity sha1-6aCviNvXUVifXlDYD0yYt4CIT4M=
 
 is-what@^3.3.1:
   version "3.4.0"
@@ -8352,6 +8930,11 @@ isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
+
+isarray@^2.0.5:
+  version "2.0.5"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/isarray/-/isarray-2.0.5.tgz#8af1e4c1221244cc62459faf38940d4e644a5723"
+  integrity sha1-ivHkwSISRMxiRZ+vOJQNTmRKVyM=
 
 isexe@^2.0.0:
   version "2.0.0"
@@ -9023,6 +9606,22 @@ jsonschema@^1.0.2:
   resolved "https://registry.yarnpkg.com/jsonschema/-/jsonschema-1.2.5.tgz#bab69d97fa28946aec0a56a9cc266d23fe80ae61"
   integrity sha512-kVTF+08x25PQ0CjuVc0gRM9EUPb0Fe9Ln/utFOgcdxEIOHuU7ooBk/UPTd7t1M91pP35m0MU1T8M5P7vP1bRRw==
 
+jsonwebtoken@8.1.0:
+  version "8.1.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/jsonwebtoken/-/jsonwebtoken-8.1.0.tgz#c6397cd2e5fd583d65c007a83dc7bb78e6982b83"
+  integrity sha1-xjl80uX9WD1lwAeoPce7eOaYK4M=
+  dependencies:
+    jws "^3.1.4"
+    lodash.includes "^4.3.0"
+    lodash.isboolean "^3.0.3"
+    lodash.isinteger "^4.0.4"
+    lodash.isnumber "^3.0.3"
+    lodash.isplainobject "^4.0.6"
+    lodash.isstring "^4.0.1"
+    lodash.once "^4.0.0"
+    ms "^2.0.0"
+    xtend "^4.0.1"
+
 jsonwebtoken@^8.2.1:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/jsonwebtoken/-/jsonwebtoken-8.5.1.tgz#00e71e0b8df54c2121a1f26137df2280673bcc0d"
@@ -9685,6 +10284,13 @@ make-dir@^2.0.0, make-dir@^2.1.0:
     pify "^4.0.1"
     semver "^5.6.0"
 
+make-dir@^3.0.0:
+  version "3.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/make-dir/-/make-dir-3.0.0.tgz#1b5f39f6b9270ed33f9f054c5c0f84304989f801"
+  integrity sha1-G1859rknDtM/nwVMXA+EMEmJ+AE=
+  dependencies:
+    semver "^6.0.0"
+
 make-plural@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/make-plural/-/make-plural-4.3.0.tgz#f23de08efdb0cac2e0c9ba9f315b0dff6b4c2735"
@@ -10023,6 +10629,18 @@ mime-db@1.42.0, "mime-db@>= 1.40.0 < 2":
   resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.42.0.tgz#3e252907b4c7adb906597b4b65636272cf9e7bac"
   integrity sha512-UbfJCR4UAVRNgMpfImz05smAXK7+c+ZntjaA26ANtkXLlOe947Aag5zdIcKQULAiF9Cq4WxBi9jUs5zkA84bYQ==
 
+mime-db@1.43.0, "mime-db@>= 1.43.0 < 2":
+  version "1.43.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/mime-db/-/mime-db-1.43.0.tgz#0a12e0502650e473d735535050e7c8f4eb4fae58"
+  integrity sha1-ChLgUCZQ5HPXNVNQUOfI9OtPrlg=
+
+mime-types@^2.0.8:
+  version "2.1.26"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/mime-types/-/mime-types-2.1.26.tgz#9c921fc09b7e149a65dfdc0da4d20997200b0a06"
+  integrity sha1-nJIfwJt+FJpl39wNpNIJlyALCgY=
+  dependencies:
+    mime-db "1.43.0"
+
 mime-types@^2.1.12, mime-types@^2.1.16, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
   version "2.1.25"
   resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.25.tgz#39772d46621f93e2a80a856c53b86a62156a6437"
@@ -10223,7 +10841,7 @@ ms@2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
   integrity sha512-tgp+dl5cGk28utYktBsrFqA7HKgrhgPsg6Z/EfhWI4gl1Hwq8B/GmY/0oXZ6nF8hDVesS/FpnYaD/kOWhYQvyg==
 
-ms@^2.1.1:
+ms@^2.0.0, ms@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
@@ -10366,10 +10984,15 @@ node-fetch@^1.0.1:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
-node-fetch@^2.3.0, node-fetch@^2.6.0:
+node-fetch@^2.2.0, node-fetch@^2.3.0, node-fetch@^2.6.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+
+node-forge@0.7.4:
+  version "0.7.4"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/node-forge/-/node-forge-0.7.4.tgz#8e6e9f563a1e32213aa7508cded22aa791dbf986"
+  integrity sha1-jm6fVjoeMiE6p1CM3tIqp5Hb+YY=
 
 node-forge@0.9.0:
   version "0.9.0"
@@ -12491,6 +13114,15 @@ pumpify@^1.3.3:
     inherits "^2.0.3"
     pump "^2.0.0"
 
+pumpify@^2.0.0:
+  version "2.0.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/pumpify/-/pumpify-2.0.1.tgz#abfc7b5a621307c728b551decbbefb51f0e4aa1e"
+  integrity sha1-q/x7WmITB8cotVHey777UfDkqh4=
+  dependencies:
+    duplexify "^4.1.1"
+    inherits "^2.0.3"
+    pump "^3.0.0"
+
 punycode@1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.3.2.tgz#9653a036fb7c1ee42342f2325cceefea3926c48d"
@@ -13003,7 +13635,7 @@ read-pkg@^5.2.0:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-"readable-stream@2 || 3", readable-stream@^3.0.1, readable-stream@^3.0.6, readable-stream@^3.1.1, readable-stream@^3.4.0:
+"readable-stream@2 || 3", readable-stream@^3.0.1, readable-stream@^3.0.2, readable-stream@^3.0.6, readable-stream@^3.1.1, readable-stream@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.4.0.tgz#a51c26754658e0a3c21dbf59163bd45ba6f447fc"
   integrity sha512-jItXPLmrSR8jmTRmRWJXCnGJsfy85mB3Wd/uINMXA65yrnFo0cPClFIUWzo2najVNSl+mx7/4W8ttlLWJe99pQ==
@@ -13664,6 +14296,14 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
+rx-firebase@^0.5.0:
+  version "0.5.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/rx-firebase/-/rx-firebase-0.5.0.tgz#b84d8ee1735b0160333e705a4972854e8b84846e"
+  integrity sha1-uE2O4XNbAWAzPnBaSXKFTouEhG4=
+  optionalDependencies:
+    firebase ">=3.0.0"
+    firebase-admin ">=5.0.0"
+
 rxfire@^3.9.2:
   version "3.9.2"
   resolved "https://registry.yarnpkg.com/rxfire/-/rxfire-3.9.2.tgz#f6e73d5874d803e59639f14ea788234306681273"
@@ -13828,6 +14468,11 @@ semver@6.3.0, semver@^6.0.0, semver@^6.1.2, semver@^6.2.0, semver@^6.3.0:
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
+semver@^7.0.0:
+  version "7.1.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/semver/-/semver-7.1.1.tgz#29104598a197d6cbe4733eeecbe968f7b43a9667"
+  integrity sha1-KRBFmKGX1svkcz7uy+lo97Q6lmc=
+
 semver@~5.3.0:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
@@ -13969,6 +14614,14 @@ shellwords@^0.1.1:
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==
 
+side-channel@^1.0.1:
+  version "1.0.2"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/side-channel/-/side-channel-1.0.2.tgz#df5d1abadb4e4bf4af1cd8852bf132d2f7876947"
+  integrity sha1-310auttOS/SvHNiFK/Ey0veHaUc=
+  dependencies:
+    es-abstract "^1.17.0-next.1"
+    object-inspect "^1.7.0"
+
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
@@ -14026,6 +14679,11 @@ slide@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/slide/-/slide-1.1.6.tgz#56eb027d65b4d2dce6cb2e2d32c4d4afc9e1d707"
   integrity sha1-VusCfWW00tzmyy4tMsTUr8nh1wc=
+
+snakeize@^0.1.0:
+  version "0.1.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/snakeize/-/snakeize-0.1.0.tgz#10c088d8b58eb076b3229bb5a04e232ce126422d"
+  integrity sha1-EMCI2LWOsHazIpu1oE4jLOEmQi0=
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
@@ -14318,6 +14976,13 @@ stream-each@^1.1.0:
     end-of-stream "^1.1.0"
     stream-shift "^1.0.0"
 
+stream-events@^1.0.1, stream-events@^1.0.4, stream-events@^1.0.5:
+  version "1.0.5"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/stream-events/-/stream-events-1.0.5.tgz#bbc898ec4df33a4902d892333d47da9bf1c406d5"
+  integrity sha1-u8iY7E3zOkkC2JIzPUfam/HEBtU=
+  dependencies:
+    stubs "^3.0.0"
+
 stream-http@^2.7.2:
   version "2.8.3"
   resolved "https://registry.yarnpkg.com/stream-http/-/stream-http-2.8.3.tgz#b2d242469288a5a27ec4fe8933acf623de6514fc"
@@ -14333,6 +14998,11 @@ stream-shift@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/stream-shift/-/stream-shift-1.0.0.tgz#d5c752825e5367e786f78e18e445ea223a155952"
   integrity sha1-1cdSgl5TZ+eG944Y5EXqIjoVWVI=
+
+streamsearch@0.1.2:
+  version "0.1.2"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/streamsearch/-/streamsearch-0.1.2.tgz#808b9d0e56fc273d809ba57338e929919a1a9f1a"
+  integrity sha1-gIudDlb8Jz2Am6VzOOkpkZoanxo=
 
 strict-uri-encode@^1.0.0:
   version "1.1.0"
@@ -14410,10 +15080,26 @@ string.prototype.trimleft@^2.1.0:
     define-properties "^1.1.3"
     function-bind "^1.1.1"
 
+string.prototype.trimleft@^2.1.1:
+  version "2.1.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/string.prototype.trimleft/-/string.prototype.trimleft-2.1.1.tgz#9bdb8ac6abd6d602b17a4ed321870d2f8dcefc74"
+  integrity sha1-m9uKxqvW1gKxek7TIYcNL43O/HQ=
+  dependencies:
+    define-properties "^1.1.3"
+    function-bind "^1.1.1"
+
 string.prototype.trimright@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/string.prototype.trimright/-/string.prototype.trimright-2.1.0.tgz#669d164be9df9b6f7559fa8e89945b168a5a6c58"
   integrity sha512-fXZTSV55dNBwv16uw+hh5jkghxSnc5oHq+5K/gXgizHwAvMetdAJlHqqoFC1FSDVPYWLkAKl2cxpUT41sV7nSg==
+  dependencies:
+    define-properties "^1.1.3"
+    function-bind "^1.1.1"
+
+string.prototype.trimright@^2.1.1:
+  version "2.1.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/string.prototype.trimright/-/string.prototype.trimright-2.1.1.tgz#440314b15996c866ce8a0341894d45186200c5d9"
+  integrity sha1-RAMUsVmWyGbOigNBiU1FGGIAxdk=
   dependencies:
     define-properties "^1.1.3"
     function-bind "^1.1.1"
@@ -14542,6 +15228,11 @@ strip-json-comments@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.0.1.tgz#85713975a91fb87bf1b305cca77395e40d2a64a7"
   integrity sha512-VTyMAUfdm047mwKl+u79WIdrZxtFtn+nBxHeb844XBQ9uMNTuTHdx2hc5RiAJYqwTj3wc/xe5HLSdJSkJ+WfZw==
+
+stubs@^3.0.0:
+  version "3.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/stubs/-/stubs-3.0.0.tgz#e8d2ba1fa9c90570303c030b6900f7d5f89abe5b"
+  integrity sha1-6NK6H6nJBXAwPAMLaQD31fiavls=
 
 style-loader@1.0.0:
   version "1.0.0"
@@ -14903,6 +15594,17 @@ tcp-port-used@^1.0.1:
     debug "4.1.0"
     is2 "2.0.1"
 
+teeny-request@^5.2.1:
+  version "5.3.3"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/teeny-request/-/teeny-request-5.3.3.tgz#b1f40cb994fbbc58650e51e8084bde975a5e15f4"
+  integrity sha1-sfQMuZT7vFhlDlHoCEvel1peFfQ=
+  dependencies:
+    http-proxy-agent "^3.0.0"
+    https-proxy-agent "^4.0.0"
+    node-fetch "^2.2.0"
+    stream-events "^1.0.5"
+    uuid "^3.3.2"
+
 temp-dir@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-1.0.0.tgz#0a7c0ea26d3a39afa7e0ebea9c1fc0bc4daa011d"
@@ -15002,7 +15704,7 @@ through2@^2.0.0:
     readable-stream "~2.3.6"
     xtend "~4.0.1"
 
-through2@^3.0.1:
+through2@^3.0.0, through2@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/through2/-/through2-3.0.1.tgz#39276e713c3302edf9e388dd9c812dd3b825bd5a"
   integrity sha512-M96dvTalPT3YbYLaKaCuwu+j06D/8Jfib0o/PxbVt6Amhv3dUAtW6rTV1jPgJSBG83I/e04Y6xkVdVhSRhi0ww==
@@ -15426,6 +16128,13 @@ unique-string@^1.0.0:
   integrity sha1-nhBXzKhRq7kzmPizOuGHuZyuwRo=
   dependencies:
     crypto-random-string "^1.0.0"
+
+unique-string@^2.0.0:
+  version "2.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/unique-string/-/unique-string-2.0.0.tgz#39c6451f81afb2749de2b233e3f7c5e8843bd89d"
+  integrity sha1-OcZFH4GvsnSd4rIz4/fF6IQ72J0=
+  dependencies:
+    crypto-random-string "^2.0.0"
 
 unist-util-find-all-after@^1.0.1, unist-util-find-all-after@^1.0.2:
   version "1.0.5"
@@ -16019,6 +16728,27 @@ whatwg-url@^7.0.0:
     tr46 "^1.0.1"
     webidl-conversions "^4.0.2"
 
+which-boxed-primitive@^1.0.1:
+  version "1.0.1"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/which-boxed-primitive/-/which-boxed-primitive-1.0.1.tgz#cbe8f838ebe91ba2471bb69e9edbda67ab5a5ec1"
+  integrity sha1-y+j4OOvpG6JHG7aentvaZ6taXsE=
+  dependencies:
+    is-bigint "^1.0.0"
+    is-boolean-object "^1.0.0"
+    is-number-object "^1.0.3"
+    is-string "^1.0.4"
+    is-symbol "^1.0.2"
+
+which-collection@^1.0.0:
+  version "1.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/which-collection/-/which-collection-1.0.0.tgz#303d38022473f4b7048b529b45f6c842d8814269"
+  integrity sha1-MD04AiRz9LcEi1KbRfbIQtiBQmk=
+  dependencies:
+    is-map "^2.0.0"
+    is-set "^2.0.0"
+    is-weakmap "^2.0.0"
+    is-weakset "^2.0.0"
+
 which-module@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-1.0.0.tgz#bba63ca861948994ff307736089e3b96026c2a4f"
@@ -16291,7 +17021,7 @@ write-file-atomic@^2.0.0:
     imurmurhash "^0.1.4"
     signal-exit "^3.0.2"
 
-write-file-atomic@^3.0.1:
+write-file-atomic@^3.0.0, write-file-atomic@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/write-file-atomic/-/write-file-atomic-3.0.1.tgz#558328352e673b5bb192cf86500d60b230667d4b"
   integrity sha512-JPStrIyyVJ6oCSz/691fAjFtefZ6q+fP6tm+OS4Qw6o+TGQxNp1ziY2PgS+X/m0V8OWhZiO/m4xSj+Pr4RrZvw==
@@ -16345,6 +17075,11 @@ xdg-basedir@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xdg-basedir/-/xdg-basedir-3.0.0.tgz#496b2cc109eca8dbacfe2dc72b603c17c5870ad4"
   integrity sha1-SWsswQnsqNus/i3HK2A8F8WHCtQ=
+
+xdg-basedir@^4.0.0:
+  version "4.0.0"
+  resolved "https://mobiletta.pkgs.visualstudio.com/_packaging/moxy.npm/npm/registry/xdg-basedir/-/xdg-basedir-4.0.0.tgz#4bc8d9984403696225ef83a1573cbbcb4e79db13"
+  integrity sha1-S8jZmEQDaWIl74OhVzy7y0552xM=
 
 xml-name-validator@^3.0.0:
   version "3.0.0"
