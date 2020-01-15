@@ -83,3 +83,9 @@ config
 config/*
 config/config
 config/serviceAccount
+
+# service account credentials for firebase
+firebase_credentials.json
+service_account.json
+*serviceaccount*
+*credentials*
