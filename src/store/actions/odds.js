@@ -76,11 +76,11 @@ export const getOdds = () => {
           if (errors.length === 0) {
             finalDocument = patch.reduce(jsonpatch.applyReducer, updatedDocument);
           } else {
-            for (var i = 0; i < errors.length; i++) {
-              if (!errors[i]) {
-                console.log('Valid patch at index', i, patch[i]);
+            for (var j = 0; j < errors.length; j++) {
+              if (!errors[j]) {
+                console.log('Valid patch at index', j, patch[j]);
               } else {
-                console.error('Invalid patch at index', i, errors[i], patch[i]);
+                console.error('Invalid patch at index', j, errors[j], patch[j]);
               }
             }
           }
