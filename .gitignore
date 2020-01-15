@@ -1,4 +1,4 @@
-t commit -m "remove file1.txt"# Logs
+# Logs
 logs
 *.log
 npm-debug.log*
