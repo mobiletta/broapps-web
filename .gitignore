@@ -67,3 +67,9 @@ node_modules/
 .DS_STORE
 build
 *.orig
+
+# service account credentials for firebase
+firebase_credentials.json
+service_account.json
+*serviceaccount*
+*credentials*
