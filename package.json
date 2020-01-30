@@ -17,7 +17,6 @@
     "es6-promise": "^4.2.8",
     "fast-json-patch": "^3.0.0-1",
     "firebase": "^7.5.0",
-    "firebaseui": "^4.3.0",
     "firesql": "^2.0.2",
     "flow-bin": "^0.112.0",
     "formik": "^2.0.4",
@@ -34,14 +33,12 @@
     "react": "^16.12.0",
     "react-animated-css": "^1.2.1",
     "react-dom": "^16.12.0",
-    "react-firebaseui": "^4.0.0",
     "react-golden-layout": "^1.0.6",
     "react-moment": "^0.9.6",
     "react-player": "^1.14.2",
     "react-redux": "^7.1.3",
     "react-redux-firebase": "^3.0.5",
     "react-responsive-picture": "^3.2.2",
-    "react-responsive-video": "^1.2.5",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-social-login-buttons": "^3.0.0",
@@ -59,17 +56,16 @@
     "styled-components": "^4.4.1",
     "superb": "^4.0.0",
     "uifx": "^2.0.6",
-    "video-react": "^0.14.1",
     "yup": "^0.27.0"
   },
   "engines": {
     "node": "0.10.x"
   },
   "scripts": {
-    "start": "cross-env craco start",
-    "build": "cross-env craco build",
-    "test": "cross-env craco test --passWithNoTests --env=jsdom",
-    "eject": "cross-env craco eject",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --passWithNoTests --env=jsdom",
+    "eject": "craco eject",
     "build:config": "firebase-ci createConfig",
     "deploy": "firebase-ci deploy",
     "flow": "flow",
@@ -85,7 +81,7 @@
     "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss,sass}'",
     "lint": "eslint src/**/*.{js,jsx}",
     "lint:fix": "eslint --fix src/**/*.{js,jsx}",
-    "refreshVSToken": "vsts-npm-auth -config .npmrc"
+    "lint:css":"stylelint './src/**/*.js'"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.4",
@@ -119,8 +115,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix && lint-staged",
-      "pre-push": "npm run lint"
+      "pre-commit": "npm run lint:fix && lint-staged"
     }
   },
   "lint-staged": {
