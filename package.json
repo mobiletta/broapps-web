@@ -62,10 +62,10 @@
     "node": "0.10.x"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test --passWithNoTests --env=jsdom",
-    "eject": "craco eject",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --passWithNoTests --env=jsdom",
+    "eject": "react-scripts eject",
     "build:config": "firebase-ci createConfig",
     "deploy": "firebase-ci deploy",
     "flow": "flow",
