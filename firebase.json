@@ -1,7 +1,7 @@
 {
   "hosting": {
     "public": "build",
-    "headers": [{ "source": "/service-worker.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }],
+    "site": "broleans",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   },
   "database": {
