@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ResponsiveVideo from './ResponsiveVideo'
-import styles from './Landing.module.scss'
+import ResponsiveVideo from './ResponsiveVideo';
 
 export default class Landing extends Component {
   render() {
