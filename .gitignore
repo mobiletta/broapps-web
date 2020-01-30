@@ -68,8 +68,3 @@ node_modules/
 build
 *.orig
 
-# service account credentials for firebase
-firebase_credentials.json
-service_account.json
-*serviceaccount*
-*credentials*
