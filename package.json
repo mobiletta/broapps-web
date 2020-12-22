@@ -18,7 +18,7 @@
     "firebase": "^7.5.0",
     "firebaseui": "^4.3.0",
     "firesql": "^2.0.2",
-    "flow-bin": "^0.112.0",
+    "flow-bin": "^0.141.0",
     "formik": "^2.0.4",
     "grommet": "^2.8.0",
     "grommet-icons": "^4.4.0",
