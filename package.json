@@ -18,7 +18,6 @@
     "firebase": "^8.6.1",
     "firebaseui": "^4.8.0",
     "firesql": "^2.0.2",
-    "flow-bin": "^0.151.0",
     "formik": "^2.2.6",
     "grommet": "^2.17.2",
     "grommet-icons": "^4.5.0",
@@ -60,7 +59,7 @@
     "yup": "^0.32.9"
   },
   "engines": {
-    "node" : ">=12.0.0 <14.17.0"
+    "node": ">=12.0.0 <14.17.0"
   },
   "scripts": {
     "start": "cross-env craco start",
@@ -102,6 +101,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "firebase-ci": "^0.15.1",
     "firebase-tools": "^9.10.2",
+    "flow-bin": "^0.151.0",
     "husky": "^6.0.0",
     "install-peers-cli": "^2.2.0",
     "lint-staged": "^11.0.0",
