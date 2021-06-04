@@ -15,7 +15,7 @@
     "cross-env": "^7.0.3",
     "es6-promise": "^4.2.8",
     "fast-json-patch": "^3.0.0-1",
-    "firebase": "^8.6.1",
+    "firebase": "^8.6.4",
     "firebaseui": "^4.8.0",
     "firesql": "^2.0.2",
     "formik": "^2.2.6",
