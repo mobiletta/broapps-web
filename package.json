@@ -6,7 +6,7 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.14.0",
     "@craco/craco": "^6.1.2",
-    "@sentry/browser": "^6.3.6",
+    "@sentry/browser": "^6.6.0",
     "animate.css": "^4.1.1",
     "axios": "^0.21.1",
     "bootstrap": "^5.0.1",
